@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CivicMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CivicMobile.Views">
+
+    <TabBar>
+        <Tab Title="Welcome" Icon="home.png">
+            <ShellContent
+                Title="Welcome Page"
+                ContentTemplate="{DataTemplate local:WelcomePage}"
+                Route="WelcomePage" />
+        </Tab>
+        <Tab Title="Study" Icon="study.png">
+            <ShellContent
+                Title="Study"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab Title="Practice" Icon="exam.png">
+            <ShellContent
+                Title="Practice"
+                ContentTemplate="{DataTemplate local:PracticePage}"
+                Route="Practice" />
+        </Tab>
+        <Tab Title="Settings" Icon="settings.png">
+            <ShellContent
+                Title="Settings"
+                ContentTemplate="{DataTemplate local:SettingsPage}"
+                Route="Settings" />
+        </Tab>
+    </TabBar>
+</Shell>

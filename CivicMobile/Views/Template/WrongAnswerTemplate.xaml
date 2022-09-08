@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CivicMobile.Views.Template.WrongAnswerTemplate">
+    <Grid
+        Margin="10"
+
+        Padding="10"
+        WidthRequest="400"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="FillAndExpand"
+        BackgroundColor="Red">
+        <Grid.Shadow>
+            <Shadow Brush="Black" Offset="5,5" Opacity="0.6" />
+        </Grid.Shadow>
+        <Label
+            FontSize="14"
+            TextColor="Black"
+            TextDecorations="Strikethrough"
+            HorizontalTextAlignment="Center"
+            Text="{Binding AnswerText}"
+            VerticalOptions="CenterAndExpand"
+            VerticalTextAlignment="Center" />
+    </Grid>
+</ContentView>

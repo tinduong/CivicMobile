@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CivicMobile.Views.WelcomePage"
+             Title="USCIS Civic Exam guide" BackgroundColor="#fcfcfc">
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Image Source="Images/welcome.jpeg" Opacity="1" />
+        </Grid>
+
+        <Grid Grid.Row="1" Padding="10">
+            <VerticalStackLayout>
+                <Label
+                    Margin="10"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Text="Welcome to the USCIS Study guide"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+                <Label Text="The 2008 civics practice test is a study tool to help you test your knowledge of U.S. history and government. Use this online tool in English to prepare for the civics portion of the naturalization test. The civics practice test is also available in Spanish, but please note that the actual test is in English."></Label>
+            </VerticalStackLayout>
+        </Grid>
+        <Grid Grid.Row="2" RowSpacing="15">
+            <Label FontSize="20" Margin="10" HorizontalTextAlignment="Center" Text="Taking Practice Exam to see your passing rate" FontAttributes="Bold" />
+            <Label TextColor="Green" Margin="50" HorizontalTextAlignment="Center" Text="100%" FontSize="80" />
+        </Grid>
+    </Grid>
+</ContentPage>

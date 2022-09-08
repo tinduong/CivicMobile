@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CivicMobile.Views.MainPage"
+             xmlns:viewmodel="clr-namespace:CivicMobile.ViewModels"
+             x:Name="HomePage"
+             Title="{Binding Title}" BackgroundColor="#fcfcfc">
+    <Grid>
+
+        <RefreshView Command="{Binding LoadQuestionsCommand}" IsRefreshing="{Binding IsRefreshing}">
+
+            <CollectionView Grid.Row="1" Margin="5" ItemsSource="{Binding Questions}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="5">
+                            <ScrollView>
+
+                                <Frame
+                                    Margin="5"
+                                    MinimumHeightRequest="200"
+                                    Padding="15"
+                                    CornerRadius="5"
+                                    BackgroundColor="White">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainPageViewModel}}, Path=GoToQuestionDetailCommand }" />
+                                    </Frame.GestureRecognizers>
+
+                                    <Grid RowDefinitions="*,*">
+                                        <VerticalStackLayout Grid.Row="0" Margin="10">
+                                            <HorizontalStackLayout VerticalOptions="CenterAndExpand" Spacing="10">
+                                                <Label FontSize="50" FontAttributes="Bold" Text="{Binding QuestionNumber}" />
+                                                <Label
+                                                    FontSize="15"
+                                                    WidthRequest="250"
+                                                    FontAttributes="Bold"
+                                                    HorizontalTextAlignment="Start"
+                                                    Text="{Binding QuestionDescription}"
+                                                    VerticalOptions="Center" />
+                                            </HorizontalStackLayout>
+
+                                            <CollectionView ItemsSource="{Binding Answers}" Margin="0">
+                                                <CollectionView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label WidthRequest="200" Margin="0" Text="{Binding AnswerText}" />
+                                                    </DataTemplate>
+                                                </CollectionView.ItemTemplate>
+                                            </CollectionView>
+                                        </VerticalStackLayout>
+                                    </Grid>
+                                </Frame>
+                            </ScrollView>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+        <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" />
+    </Grid>
+</ContentPage>
