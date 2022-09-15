@@ -7,12 +7,25 @@ namespace CivicMobile.ViewModels
         [ObservableProperty]
         private List<string> _availableLanguages;
 
-        [ObservableProperty]
-        private string _selectedLanguage;
+        private string _selectedlanguage;
+
+        public string SelectedLanguage
+        {
+            get => _selectedlanguage;
+            set
+            {
+                var previous = _selectedlanguage;
+                Preferences.Set("previousLanguage", previous);
+                _selectedlanguage = value;
+                Preferences.Set("selectionLanguage", value);
+                OnPropertyChanged();
+            }
+        }
 
         public SettingsPageViewModel()
         {
             _availableLanguages = new() { "Vietnamese", "English" };
+            SelectedLanguage = Preferences.Get("selectionLanguage", "English");
         }
     }
 }

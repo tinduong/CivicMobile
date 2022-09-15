@@ -1,15 +1,20 @@
-﻿using CivicMobile.Models;
+﻿using CivicMobile.Interfaces;
+using CivicMobile.Models;
 using CivicMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Plugin.SimpleAudioPlayer;
 using System.Collections.ObjectModel;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CivicMobile.ViewModels
 {
     public partial class PracticePageViewModel : BaseViewModel
     {
         public ObservableCollection<Question> ExamQuestions { get; set; } = new();
-        public bool IsQuestionAnswered { get; private set; }
+
+        [ObservableProperty]
+        public bool _isQuestionAnswered;
 
         [ObservableProperty]
         private Question _currentQuestion;
@@ -21,14 +26,19 @@ namespace CivicMobile.ViewModels
         private string _subTitle = "Yeah";
 
         private QuestionService questionService;
+        private IAudioPlayer audioPlayer;
 
         [ObservableProperty]
         private Boolean _isDone = false;
 
-        public PracticePageViewModel(QuestionService questionService)
+        [ObservableProperty]
+        private SelectionMode _selectionMode = SelectionMode.Single;
+
+        public PracticePageViewModel(QuestionService questionService, IAudioPlayer audioPlayer)
         {
             Title = "Practice Exam";
             this.questionService = questionService;
+            this.audioPlayer = audioPlayer;
         }
 
         [RelayCommand]
@@ -71,29 +81,34 @@ namespace CivicMobile.ViewModels
         [RelayCommand]
         private void NextQuestion()
         {
+            SelectionMode = SelectionMode.Single;
             var currentIndex = CurrentQuestion.QuestionNumber;
             var next = ++currentIndex;
-            CurrentQuestion = ExamQuestions.FirstOrDefault(item => item.QuestionNumber == next);
+            var nextQuestion = ExamQuestions.FirstOrDefault(item => item.QuestionNumber == next)?? ExamQuestions.FirstOrDefault();
+
+
+            CurrentQuestion = nextQuestion;
+            IsQuestionAnswered = false;
         }
+
+        private CancellationTokenSource cts;
 
         [RelayCommand]
         private async Task AnswerSelected()
         {
-            if (CurrentQuestion == null) return;
+           
+            if (CurrentQuestion == null || IsQuestionAnswered) return;
+            IsQuestionAnswered = true;
 
-            var test = SelectedAnswer;
-
+            #region
             var isCorrect = CurrentQuestion.Answers.Where(a => a.IsCorrect).Contains(SelectedAnswer);
 
             if (isCorrect)
             {
-                //_audioService.Play("correct.wav");
-            }
-            else
-            {
-                var correctAnswer = CurrentQuestion.Answers.Where(item => item.IsCorrect).FirstOrDefault().AnswerText;
+                audioPlayer.Play("correct.wav");
             }
 
+            #endregion
             foreach (var answer in CurrentQuestion.Answers)
             {
                 answer.IsQuestionAnswered = true;
@@ -102,6 +117,7 @@ namespace CivicMobile.ViewModels
 
             var cachCurrentQuestion = CurrentQuestion;
             CurrentQuestion = null;
+            SelectionMode = SelectionMode.None;
             CurrentQuestion = cachCurrentQuestion;
         }
     }

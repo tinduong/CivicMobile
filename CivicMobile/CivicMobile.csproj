@@ -49,62 +49,67 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\exam.png" />
-	  <None Remove="Resources\Images\home.png" />
-	  <None Remove="Resources\Images\study.png" />
+		<None Remove="Audio\correct.wav" />
+		<None Remove="Resources\Images\exam.png" />
+		<None Remove="Resources\Images\home.png" />
+		<None Remove="Resources\Images\study.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="Acr.UserDialogs" Version="8.0.1" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
-	  <PackageReference Include="Nancy" Version="2.0.0" />
-	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
-	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-	  <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
-	  <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+	  <EmbeddedResource Include="Audio\correct.wav" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\MainPage.xaml.cs">
-	    <DependentUpon>MainPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\QuestionDetailPage.xaml.cs">
-	    <DependentUpon>QuestionDetailPage.xaml</DependentUpon>
-	  </Compile>
-	  <Compile Update="Views\Template\WrongAnswerTemplate.xaml.cs">
-	    <DependentUpon>WrongAnswerTemplate.xaml</DependentUpon>
-	  </Compile>
+		<PackageReference Include="Acr.UserDialogs" Version="8.0.1" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="Nancy" Version="2.0.0" />
+		<PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
+		<PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Views\MainPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\PracticePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\QuestionDetailPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\SettingsPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Template\WrongAnswerTemplate.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Template\CorrectAnswerTemplate.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Template\MenuItemTemplate.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\Template\NormalTestTemplate.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\WelcomePage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
+		<Compile Update="Views\MainPage.xaml.cs">
+			<DependentUpon>MainPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\QuestionDetailPage.xaml.cs">
+			<DependentUpon>QuestionDetailPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\Template\WrongAnswerTemplate.xaml.cs">
+			<DependentUpon>WrongAnswerTemplate.xaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<MauiXaml Update="Views\MainPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\PracticePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\QuestionDetailPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\SettingsPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Template\WrongAnswerTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Template\CorrectAnswerTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Template\MenuItemTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\Template\NormalTestTemplate.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
+		<MauiXaml Update="Views\WelcomePage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 	</ItemGroup>
 
 </Project>

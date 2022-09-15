@@ -4,9 +4,9 @@
     {
     }
 
-    public class DeselectListViewItemAction : TriggerAction<ListView>
+    public class DeselectListViewItemAction : TriggerAction<CollectionView>
     {
-        protected override void Invoke(ListView sender)
+        protected override void Invoke(CollectionView sender)
         {
             sender.SelectedItem = null;
         }

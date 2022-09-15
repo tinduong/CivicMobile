@@ -10,13 +10,14 @@
         WidthRequest="400"
         HorizontalOptions="CenterAndExpand"
         VerticalOptions="FillAndExpand"
-        BackgroundColor="Green">
+        BackgroundColor="DarkGreen">
         <Grid.Shadow>
             <Shadow Brush="Black" Offset="5,5" Opacity="0.6" />
         </Grid.Shadow>
         <Label
                 FontSize="14"
-                TextColor="White"
+            FontAttributes="Bold"
+                TextColor="Beige"
                 HorizontalTextAlignment="Center"
                 Text="{Binding AnswerText}"
                 VerticalOptions="CenterAndExpand"

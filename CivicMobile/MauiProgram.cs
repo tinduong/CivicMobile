@@ -1,4 +1,5 @@
-﻿using CivicMobile.Services;
+﻿using CivicMobile.Interfaces;
+using CivicMobile.Services;
 using CivicMobile.ViewModels;
 using CivicMobile.Views;
 using CommunityToolkit.Maui;
@@ -32,6 +33,8 @@ public static class MauiProgram
 
         builder.Services.AddTransient<SettingsPage>();
         builder.Services.AddTransient<SettingsPageViewModel>();
+
+        builder.Services.AddTransient<IAudioPlayer, AudioPlayerService>();
 
         return builder.Build();
     }
