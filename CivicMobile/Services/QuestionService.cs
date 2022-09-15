@@ -17,11 +17,17 @@ namespace CivicMobile.Services
 
         public async Task<List<Question>> GetQuestions()
         {
-            if (questionList.Count > 0)
-                return questionList;
-
             // call api
-            var url = "https://raw.githubusercontent.com/tinduong/citizenship/master/Questions_ENG.json";
+            var selectedLanguage = Preferences.Get("selectionLanguage", "English");
+            var url = "";
+            if (selectedLanguage == "English")
+            {
+                url = "https://raw.githubusercontent.com/tinduong/citizenship/master/Questions_ENG.json";
+            }
+            else if (selectedLanguage == "Vietnamese")
+            {
+                url = "https://raw.githubusercontent.com/tinduong/citizenship/master/Questions_VN.json";
+            }
 
             var response = await _httpClient.GetAsync(url);
 

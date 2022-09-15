@@ -22,7 +22,6 @@
             <Setter Property="TextColor" Value="White" />
         </Style>
         <Style x:Key="WrongAnswerSelected" TargetType="Frame">
-            <!--<Setter Property="BackgroundColor" Value="Red" />-->
             <Setter Property="BorderColor" Value="Red" />
         </Style>
         <Style x:Key="CorrectAnswerSelected" TargetType="Frame">
@@ -64,10 +63,9 @@
                 WidthRequest="200"
                 VerticalOptions="Center"
                 x:Name="NextQuestion"
-                BackgroundColor="#0053a6"
                 Command="{Binding NextQuestionCommand}"
                 IsEnabled="true"
-                Text="Next Question"
+                Text="NEXT QUESTION"
                 TextColor="White" />
     </Grid>
 </ContentPage>

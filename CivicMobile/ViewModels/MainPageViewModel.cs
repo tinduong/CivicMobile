@@ -44,6 +44,9 @@ namespace CivicMobile.ViewModels
             });
         }
 
+        [ObservableProperty]
+        private string _currentLanguage = "English";
+
         [RelayCommand]
         public async Task LoadQuestions()
         {
@@ -59,7 +62,6 @@ namespace CivicMobile.ViewModels
                 {
                     Questions.Add(question);
                 }
-                
             }
             catch (Exception e)
             {
