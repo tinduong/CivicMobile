@@ -1,14 +1,9 @@
-﻿namespace CivicMobile.Triggers
-{
-    public class Trigger
-    {
-    }
+﻿namespace CivicMobile.Triggers;
 
-    public class DeselectListViewItemAction : TriggerAction<CollectionView>
+public class DeselectListViewItemAction : TriggerAction<CollectionView>
+{
+    protected override void Invoke(CollectionView sender)
     {
-        protected override void Invoke(CollectionView sender)
-        {
-            sender.SelectedItem = null;
-        }
+        sender.SelectedItem = null;
     }
 }

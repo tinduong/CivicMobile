@@ -26,10 +26,11 @@ namespace CivicMobile.Services
         }
     }
 
-    public interface ISettingsService
-    {
-        void AddItem(string key, string value);
+    // delete
+    //public interface ISettingsService
+    //{
+    //    void AddItem(string key, string value);
 
-        string GetItem(string key);
-    }
+    //    string GetItem(string key);
+    //}
 }

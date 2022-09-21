@@ -1,16 +1,15 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace CivicMobile.ViewModels
+namespace CivicMobile.ViewModels;
+
+public partial class BaseViewModel : ObservableObject
 {
-    public partial class BaseViewModel : ObservableObject
-    {
-        [ObservableProperty]
-        [NotifyPropertyChangedFor(nameof(IsNotBusy))]
-        private bool isBusy;
+    [ObservableProperty]
+    [NotifyPropertyChangedFor(nameof(IsNotBusy))]
+    private bool isBusy;
 
-        [ObservableProperty]
-        private string title;
+    [ObservableProperty]
+    private string title;
 
-        public bool IsNotBusy => !IsBusy;
-    }
+    public bool IsNotBusy => !IsBusy;
 }
