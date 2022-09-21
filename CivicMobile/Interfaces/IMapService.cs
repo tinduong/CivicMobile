@@ -1,9 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿namespace CivicMobile.Interfaces;
 
-namespace CivicMobile.Interfaces
+public interface IMapService
 {
-    public interface IMapService
-    {
-        Task LoadMap();
-    }
+    Task LoadMap();
 }

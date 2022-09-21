@@ -1,23 +1,20 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
+namespace CivicMobile.Converters;
 
-namespace CivicMobile.Converters
+public class BoolToObjectConverter<T> : IValueConverter
 {
-    public class BoolToObjectConverter<T> : IValueConverter
+    public T TrueObject { set; get; }
+
+    public T FalseObject { set; get; }
+
+    public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public T TrueObject { set; get; }
+        return (bool)value ? TrueObject : FalseObject;
+    }
 
-        public T FalseObject { set; get; }
-
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return (bool)value ? TrueObject : FalseObject;
-        }
-
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            return ((T)value).Equals(TrueObject);
-        }
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return ((T)value).Equals(TrueObject);
     }
 }

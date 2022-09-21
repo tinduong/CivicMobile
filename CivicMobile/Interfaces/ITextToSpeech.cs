@@ -1,10 +1,6 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
+﻿namespace CivicMobile.Interfaces;
 
-namespace CivicMobile.Interfaces
+public interface ITextToSpeech
 {
-    public interface ITextToSpeech
-    {
-        Task Speak(string text, string language,CancellationTokenSource cancellationTokenSource = default);
-    }
+    Task Speak(string text, string language, CancellationTokenSource cancellationTokenSource = default);
 }

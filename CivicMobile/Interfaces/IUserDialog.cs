@@ -1,14 +1,15 @@
 ﻿using CivicMobile.Models;
 
-namespace CivicMobile.Interfaces
+namespace CivicMobile.Interfaces;
+
+public interface IDataService
 {
-    public interface IDataService
-    {
-        Task<IEnumerable<Question>> LoadQuestions();
-    }
-    public interface IUserDialogService
-    {
-        Task ShowDialog(string message, string title, string buttonLabel);
-        void ShowNotification(string message);
-    }
+    Task<IEnumerable<Question>> LoadQuestions();
+}
+
+public interface IUserDialogService
+{
+    Task ShowDialog(string message, string title, string buttonLabel);
+
+    void ShowNotification(string message);
 }
