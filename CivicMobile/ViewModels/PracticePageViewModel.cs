@@ -3,7 +3,10 @@ using CivicMobile.Models;
 using CivicMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Storage;
+using Plugin.Maui.Audio;
 using System.Collections.ObjectModel;
+using System.Reflection;
 
 namespace CivicMobile.ViewModels;
 
@@ -24,7 +27,9 @@ public partial class PracticePageViewModel : BaseViewModel
     private string _subTitle = "Yeah";
 
     private QuestionService questionService;
-    private IAudioPlayer audioPlayer;
+    private readonly IAudioManager audioManager;
+
+    //private readonly IAudioService audioService;
 
     [ObservableProperty]
     private Boolean _isDone = false;
@@ -32,11 +37,11 @@ public partial class PracticePageViewModel : BaseViewModel
     [ObservableProperty]
     private SelectionMode _selectionMode = SelectionMode.Single;
 
-    public PracticePageViewModel(QuestionService questionService, IAudioPlayer audioPlayer)
+    public PracticePageViewModel(QuestionService questionService, IAudioManager audioManager)
     {
         Title = "Practice Exam";
         this.questionService = questionService;
-        this.audioPlayer = audioPlayer;
+        this.audioManager = audioManager;
     }
 
     [RelayCommand]
@@ -89,7 +94,7 @@ public partial class PracticePageViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private void AnswerSelected()
+    private async void AnswerSelected()
     {
         if (CurrentQuestion == null || IsQuestionAnswered) return;
         IsQuestionAnswered = true;
@@ -99,7 +104,12 @@ public partial class PracticePageViewModel : BaseViewModel
 
         if (isCorrect)
         {
-            audioPlayer.Play("correct.wav");
+            // todo this probably need to be moved out of here
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            var stream = assembly.GetManifestResourceStream("CivicMobile.Audio." + "correct.wav");
+
+            var player = audioManager.CreatePlayer(stream);
+            player.Play();
         }
 
         #endregion
