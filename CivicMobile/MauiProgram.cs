@@ -3,6 +3,7 @@ using CivicMobile.Services;
 using CivicMobile.ViewModels;
 using CivicMobile.Views;
 using CommunityToolkit.Maui;
+using Plugin.Maui.Audio;
 
 namespace CivicMobile;
 
@@ -24,7 +25,6 @@ public static class MauiProgram
 
         builder.Services.AddTransient<MainPage>();
         builder.Services.AddTransient<MainPageViewModel>();
-
         builder.Services.AddTransient<PracticePage>();
         builder.Services.AddTransient<PracticePageViewModel>();
 
@@ -34,7 +34,7 @@ public static class MauiProgram
         builder.Services.AddTransient<SettingsPage>();
         builder.Services.AddTransient<SettingsPageViewModel>();
 
-        builder.Services.AddTransient<IAudioPlayer, AudioPlayerService>();
+        builder.Services.AddSingleton(AudioManager.Current);
 
         return builder.Build();
     }

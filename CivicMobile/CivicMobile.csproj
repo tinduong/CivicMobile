@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
-		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
 		<RootNamespace>CivicMobile</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -56,7 +56,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Audio\correct.wav" />
+		<EmbeddedResource Include="Audio\correct.wav" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -64,9 +64,9 @@
 		<PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 		<PackageReference Include="Nancy" Version="2.0.0" />
+		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
 		<PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
-		<PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.6.0" />
 		<PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
 	</ItemGroup>
 
@@ -113,7 +113,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Data\" />
+		<Folder Include="Data\" />
 	</ItemGroup>
 
 </Project>
