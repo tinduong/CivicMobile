@@ -7,10 +7,10 @@
         Padding="10"
         WidthRequest="400"
         HorizontalOptions="CenterAndExpand"
-        VerticalOptions="FillAndExpand"
-        BackgroundColor="White">
+        VerticalOptions="Center"
+        BackgroundColor="white">
         <Grid.Shadow>
-            <Shadow Brush="Black" Offset="5,5" Opacity="0.6" />
+            <Shadow Brush="Gray" Offset="3,3" Opacity="0.2" />
         </Grid.Shadow>
         <Label
             FontSize="14"

@@ -17,7 +17,6 @@
                 <Setter Property="FontSize" Value="{StaticResource MidMediumSize}" />
                 <Setter Property="VerticalOptions" Value="Center" />
             </Style>
-
         </ResourceDictionary>
     </ContentView.Resources>
     <ContentView.Content>
@@ -29,7 +28,7 @@
                     TargetType="Grid"
                     Binding="{Binding IsEnabled, Mode=TwoWay}"
                     Value="False">
-                    <Setter Property="Opacity"     
+                    <Setter Property="Opacity"
                             Value="0.5" />
                 </DataTrigger>
             </Grid.Triggers>
@@ -37,14 +36,14 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image 
+            <Image
                 Grid.Column="0"
                 Source="{Binding MenuItemType, Converter={StaticResource MenuItemTypeConverter}}"
-                Style="{StaticResource MenuIconStyle}"/>
+                Style="{StaticResource MenuIconStyle}" />
             <Label
                 Grid.Column="1"
                 Text="{Binding Title}"
-                Style="{StaticResource MenuTextStyle}"/>
+                Style="{StaticResource MenuTextStyle}" />
         </Grid>
     </ContentView.Content>
 </ContentView>

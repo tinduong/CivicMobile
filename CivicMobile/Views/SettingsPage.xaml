@@ -4,35 +4,16 @@
              x:Class="CivicMobile.Views.SettingsPage"
              Title="SettingsPage">
     <VerticalStackLayout>
-        <StackLayout Margin="15" Orientation="Horizontal">
-            <Label
-                FontSize="Medium"
-                Text="Pick Language"
-                TextColor="Green"
-                VerticalOptions="Center" />
+        <StackLayout Margin="15" Orientation="Vertical">
+
             <Picker
                 Title="Select Language"
-                HorizontalOptions="EndAndExpand"
+                HorizontalOptions="StartAndExpand"
                 ItemsSource="{Binding AvailableLanguages}"
                 SelectedItem="{Binding SelectedLanguage}"
                 VerticalOptions="Start" />
+
         </StackLayout>
 
-        <StackLayout>
-            <TableView>
-                <TableRoot>
-                    <TableSection Title="Audio Settings">
-                        <SwitchCell
-                            x:Name="ReadQuestionSwitch"
-                            On="true"
-                            Text="Read Question?" />
-                        <SwitchCell
-                            x:Name="AutoPilot"
-                            On="true"
-                            Text="Auto Pilot" />
-                    </TableSection>
-                </TableRoot>
-            </TableView>
-        </StackLayout>
     </VerticalStackLayout>
 </ContentPage>

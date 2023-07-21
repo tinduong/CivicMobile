@@ -4,7 +4,7 @@
              x:Class="CivicMobile.Views.MainPage"
              xmlns:viewmodel="clr-namespace:CivicMobile.ViewModels"
              x:Name="HomePage"
-             Title="{Binding Title}" BackgroundColor="#1b3461">
+             Title="{Binding Title}" BackgroundColor="WhiteSmoke">
     <Grid>
 
         <RefreshView Command="{Binding LoadQuestionsCommand}" IsRefreshing="{Binding IsRefreshing}">
@@ -14,13 +14,11 @@
                     <DataTemplate>
                         <Grid Margin="5">
                             <ScrollView>
-
                                 <Frame
                                     Margin="5"
                                     MinimumHeightRequest="200"
                                     Padding="15"
-                                    CornerRadius="5"
-                                    BackgroundColor="WhiteSmoke">
+                                    BackgroundColor="White">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer CommandParameter="{Binding .}" Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainPageViewModel}}, Path=GoToQuestionDetailCommand }" />
                                     </Frame.GestureRecognizers>

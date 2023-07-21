@@ -1,4 +1,5 @@
-﻿using CivicMobile.Interfaces;
+﻿using CivicMobile.Database;
+using CivicMobile.Interfaces;
 using CivicMobile.Services;
 using CivicMobile.ViewModels;
 using CivicMobile.Views;
@@ -21,10 +22,15 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
 
+        // register services
         builder.Services.AddTransient<QuestionService>();
+        builder.Services.AddSingleton(AudioManager.Current);
+        builder.Services.AddSingleton<CivicDbContext>();
 
+        // register pages and page viewmodels
         builder.Services.AddTransient<MainPage>();
         builder.Services.AddTransient<MainPageViewModel>();
+
         builder.Services.AddTransient<PracticePage>();
         builder.Services.AddTransient<PracticePageViewModel>();
 
@@ -34,7 +40,8 @@ public static class MauiProgram
         builder.Services.AddTransient<SettingsPage>();
         builder.Services.AddTransient<SettingsPageViewModel>();
 
-        builder.Services.AddSingleton(AudioManager.Current);
+        builder.Services.AddTransient<WelcomePage>();
+        builder.Services.AddTransient<WelcomePageViewModel>();
 
         return builder.Build();
     }
