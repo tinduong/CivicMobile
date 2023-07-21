@@ -42,9 +42,6 @@ public class QuestionService
 
     public async Task<List<Question>> GetExamQuestions()
     {
-        if (examList.Count > 0)
-            return examList;
-
         // call api
         var url = "https://raw.githubusercontent.com/tinduong/citizenship/master/PracticeTest_ENG.json";
 

@@ -2,78 +2,77 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.WelcomePage"
-             BackgroundColor="#1b3461">
-    <Grid Padding="0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
+             BackgroundColor="WhiteSmoke">
+    <ScrollView>
 
-        <Grid Opacity="1" Grid.Row="0">
-            <Image Scale="0.9" VerticalOptions="Center" HorizontalOptions="Center" Aspect="AspectFit" Source="Images/welcome.jpeg" Opacity="1">
-            </Image>
-        </Grid>
+        <Grid Padding="0">
 
-        <Grid Grid.Row="1" Padding="25">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image Source="welcome.jpg" />
+
+            <!--<Grid Grid.Row="1" Padding="25">
             <Border
-                Padding="24,32"
-                MinimumHeightRequest="350"
-                BackgroundColor="WhiteSmoke"
-                Stroke="LightGray"
-                HorizontalOptions="Fill"
-                VerticalOptions="End"
-                Margin="0">
-                <Border.Shadow>
-                    <Shadow Brush="Black" Offset="5,0" Opacity="0.2" />
-                </Border.Shadow>
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15" />
-                </Border.StrokeShape>
-                <VerticalStackLayout>
-                    <Label
-                        Margin="10"
-                        FontSize="17"
-                        FontAttributes="Bold"
-                        Text="Welcome to the USCIS Study guide"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center" />
-                    <Label LineBreakMode="WordWrap" Text="The 2008 civics practice test is a study tool to help you test your knowledge of U.S. history and government. Use this online tool in English to prepare for the civics portion of the naturalization test. The civics practice test is also available in Spanish, but please note that the actual test is in English."></Label>
-                    <Label Text="USCIS officer will ask you up to 10 questions from the list of 100 civics test questions. You must answer 6 questions correctly to pass the civics test." />
-                </VerticalStackLayout>
+            Padding="24,32"
+            MinimumHeightRequest="350"
+            BackgroundColor="white"
+            HorizontalOptions="Fill"
+            VerticalOptions="End"
+            StrokeThickness="0"
+            Margin="0">
+            <Border.Shadow>
+            <Shadow Brush="gray" Offset="1,1" Opacity="0.3" />
+            </Border.Shadow>
+
+            <VerticalStackLayout>
+            <Label
+            Margin="10"
+            FontSize="17"
+            FontAttributes="Bold"
+            Text="Welcome to the USCIS Study guide"
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+            <Label LineBreakMode="WordWrap" Text="The 2008 civics practice test is a study tool to help you test your knowledge of U.S. history and government. Use this online tool in English to prepare for the civics portion of the naturalization test. The civics practice test is also available in Spanish, but please note that the actual test is in English."></Label>
+            <Label Text="USCIS officer will ask you up to 10 questions from the list of 100 civics test questions. You must answer 6 questions correctly to pass the civics test." />
+            </VerticalStackLayout>
             </Border>
+            </Grid>-->
+            <Grid Padding="25" Grid.Row="1" RowSpacing="15">
+                <Border
+                    Padding="24,32"
+                    MinimumHeightRequest="150"
+                    BackgroundColor="white"
+                    StrokeThickness="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="End"
+                    Margin="0">
+                    <Border.Shadow>
+                        <Shadow Brush="gray" Offset="2,0" Opacity="0.3" />
+                    </Border.Shadow>
+                    <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                        <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="YOUR STUDY GUIDE INFO" />
+                        <VerticalStackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label>Select Exam Date</Label>
+                            <DatePicker MinimumDate="{Binding MinExamDate}"
+                                        MaximumDate="12/31/2099"
+                                        Date="06/21/2022" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Margin="10" HorizontalOptions="Center" VerticalOptions="Center">
+                            <Picker
+                                Title="Select your state"
+                                HorizontalOptions="EndAndExpand"
+                                ItemsSource="{Binding AvailableStates}"
+                                SelectedItem="{Binding SelectedState}"
+                                VerticalOptions="Start" />
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
         </Grid>
-        <Grid Padding="25" Grid.Row="2" RowSpacing="15">
-            <Border
-                Padding="24,32"
-                MinimumHeightRequest="150"
-                BackgroundColor="WhiteSmoke"
-                Stroke="LightGray"
-                HorizontalOptions="Fill"
-                VerticalOptions="End"
-                Margin="0">
-                <Border.Shadow>
-                    <Shadow Brush="Gray" Offset="5,0" Opacity="0.2" />
-                </Border.Shadow>
-                <Border.StrokeShape>
-                    <RoundRectangle CornerRadius="15" />
-                </Border.StrokeShape>
-                <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                    <Label FontAttributes="Bold" Text="YOUR STUDY GUIDE INFO" />
-                    <HorizontalStackLayout>
-                        <Label Text="Exam date: "></Label>
-                        <Label Text="09/18/1988" />
-                    </HorizontalStackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Exam location: "></Label>
-                        <Label Text="put a link here for open the map" />
-                    </HorizontalStackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Passing rate: "></Label>
-                        <Label Text="100%" />
-                    </HorizontalStackLayout>
-                </VerticalStackLayout>
-            </Border>
-        </Grid>
-    </Grid>
+    </ScrollView>
 </ContentPage>

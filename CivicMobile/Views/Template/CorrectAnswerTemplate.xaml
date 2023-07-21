@@ -12,15 +12,15 @@
         VerticalOptions="FillAndExpand"
         BackgroundColor="DarkGreen">
         <Grid.Shadow>
-            <Shadow Brush="Black" Offset="5,5" Opacity="0.6" />
+            <Shadow Brush="Gray" Offset="2,2" Opacity="0.4" />
         </Grid.Shadow>
         <Label
-                FontSize="14"
+            FontSize="14"
             FontAttributes="Bold"
-                TextColor="Beige"
-                HorizontalTextAlignment="Center"
-                Text="{Binding AnswerText}"
-                VerticalOptions="CenterAndExpand"
-                VerticalTextAlignment="Center" />
+            TextColor="Beige"
+            HorizontalTextAlignment="Center"
+            Text="{Binding AnswerText}"
+            VerticalOptions="CenterAndExpand"
+            VerticalTextAlignment="Center" />
     </Grid>
 </ContentView>
