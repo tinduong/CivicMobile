@@ -9,8 +9,7 @@ public class MainActivity : MauiAppCompatActivity
 {
     protected override void OnCreate(Bundle savedInstanceState)
     {
-        Window.SetStatusBarColor(Android.Graphics.Color.Transparent);
-
+        //Window.SetStatusBarColor(Android.Graphics.Color.Transparent);
         base.OnCreate(savedInstanceState);
     }
 }

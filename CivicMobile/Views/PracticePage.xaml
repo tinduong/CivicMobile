@@ -34,10 +34,8 @@
     </Page.Resources>
     <Grid RowDefinitions="*,*,4*,*">
         <Grid ColumnDefinitions="*,9*" HeightRequest="150" Margin="10" VerticalOptions="Start" HorizontalOptions="Center">
-
-            <Label Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" FontSize="30" Text="{Binding CurrentQuestion.QuestionNumber}" />
             <Label WidthRequest="300"
-                   Margin="10" VerticalOptions="CenterAndExpand" Grid.Column="1" FontAttributes="Bold" FontSize="15" Text="{Binding CurrentQuestion.QuestionDescription}" />
+                   Margin="10" VerticalOptions="CenterAndExpand" Grid.Column="1" FontAttributes="Bold" FontSize="20" Text="{Binding CurrentQuestion.QuestionDescription}" />
         </Grid>
 
         <Grid Grid.Row="1">

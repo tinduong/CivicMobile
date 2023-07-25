@@ -5,14 +5,13 @@
     x:Class="CivicMobile.Views.Template.CorrectAnswerTemplate">
     <Grid
         Margin="10"
-
         Padding="10"
         WidthRequest="400"
         HorizontalOptions="CenterAndExpand"
         VerticalOptions="FillAndExpand"
         BackgroundColor="DarkGreen">
         <Grid.Shadow>
-            <Shadow Brush="Gray" Offset="2,2" Opacity="0.4" />
+            <Shadow Brush="Gray" Offset="5,5" Opacity="0.5" />
         </Grid.Shadow>
         <Label
             FontSize="14"
