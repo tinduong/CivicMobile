@@ -1,5 +1,4 @@
 ﻿using CivicMobile.Database;
-using CivicMobile.Interfaces;
 using CivicMobile.Services;
 using CivicMobile.ViewModels;
 using CivicMobile.Views;
