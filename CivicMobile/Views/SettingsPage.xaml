@@ -2,18 +2,16 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.SettingsPage"
-             Title="SettingsPage">
-    <VerticalStackLayout>
+             Title="Settings">
+    <VerticalStackLayout Padding="10">
         <StackLayout Margin="15" Orientation="Vertical">
-
+            <Label Text="Studying Language" FontAttributes="Bold"/>
             <Picker
                 Title="Select Language"
                 HorizontalOptions="StartAndExpand"
                 ItemsSource="{Binding AvailableLanguages}"
                 SelectedItem="{Binding SelectedLanguage}"
                 VerticalOptions="Start" />
-
         </StackLayout>
-
     </VerticalStackLayout>
 </ContentPage>

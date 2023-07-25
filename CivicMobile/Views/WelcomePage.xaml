@@ -2,18 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.WelcomePage"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
              BackgroundColor="WhiteSmoke">
+    <ContentPage.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="{StaticResource Primary}" StatusBarStyle="LightContent" />
+    </ContentPage.Behaviors>
     <ScrollView>
 
         <Grid Padding="0">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
+                <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Image Source="welcome.jpg" />
+            <Grid Grid.Row="0">
+
+                <Image Source="appwelcome_bg.png" Scale="1.4" TranslationY="-15" TranslationX="-10" Margin="0" />
+            </Grid>
 
             <!--<Grid Grid.Row="1" Padding="25">
             <Border
@@ -58,6 +65,7 @@
                         <VerticalStackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
                             <Label>Select Exam Date</Label>
                             <DatePicker MinimumDate="{Binding MinExamDate}"
+                                        BackgroundColor="Azure"
                                         MaximumDate="12/31/2099"
                                         Date="06/21/2022" />
                         </VerticalStackLayout>
@@ -66,6 +74,7 @@
                             <Picker
                                 Title="Select your state"
                                 HorizontalOptions="EndAndExpand"
+                                BackgroundColor="Azure"
                                 ItemsSource="{Binding AvailableStates}"
                                 SelectedItem="{Binding SelectedState}"
                                 VerticalOptions="Start" />
