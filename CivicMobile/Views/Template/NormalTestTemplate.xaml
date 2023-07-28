@@ -1,22 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource White}}"
+
              x:Class="CivicMobile.Views.Template.NormalTestTemplate">
-    <Grid
+
+    <Border
         Margin="10"
         Padding="10"
-        WidthRequest="400"
+        WidthRequest="350"
+        Stroke="Gray"
+
+        StrokeThickness="0.3"
+
         HorizontalOptions="CenterAndExpand"
-        VerticalOptions="Center"
-        BackgroundColor="White">
-        <Grid.Shadow>
-            <Shadow Brush="Gray" Offset="5,5" Opacity="0.5" />
-        </Grid.Shadow>
+        VerticalOptions="FillAndExpand"
+        BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource White}}">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="5"/>
+        </Border.StrokeShape>
+
         <Label
             FontSize="14"
+            FontAttributes="Bold"
+            TextColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Primary}}"
             HorizontalTextAlignment="Center"
             Text="{Binding AnswerText}"
             VerticalOptions="CenterAndExpand"
             VerticalTextAlignment="Center" />
-    </Grid>
+    </Border>
 </ContentView>

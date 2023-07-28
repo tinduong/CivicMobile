@@ -47,6 +47,13 @@ public partial class PracticePageViewModel : BaseViewModel
     }
 
     [RelayCommand]
+    public async Task OnPageClosedCleanupCommand()
+    {
+        // clean up here
+        CurrentQuestion = null;
+    }
+
+    [RelayCommand]
     public async Task LoadExamQuestions()
     {
         try

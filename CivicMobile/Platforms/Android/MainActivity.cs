@@ -1,6 +1,9 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace CivicMobile;
 
@@ -9,7 +12,8 @@ public class MainActivity : MauiAppCompatActivity
 {
     protected override void OnCreate(Bundle savedInstanceState)
     {
-        //Window.SetStatusBarColor(Android.Graphics.Color.Transparent);
+        AppCenter.Start("d586a0f8-9b9b-4d6b-8069-9cf90506aa9a",
+                   typeof(Analytics), typeof(Crashes));
         base.OnCreate(savedInstanceState);
     }
 }
