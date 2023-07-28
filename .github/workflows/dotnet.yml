@@ -21,6 +21,17 @@ jobs:
       run: dotnet workload install maui
     - name: Restore dependencies
       run: dotnet restore
+    - name: Getting encoded keystore file and decrypt it
+      run: |
+        echo "${{ secrets.CIVIC_ANDROID_KEYSTORE_ENCODED }}" > civic.keystore.asc
+        gpg -d --passphrase "${{ secrets.CIVIC_ANDROID_KEYSTORE_PASS }}" --batch civic.keystore.asc > civic.keystore
     - name: Build
-      run: dotnet build CivicMobile/CivicMobile.csproj -c Release -f net7.0-android --no-restore
+      run: dotnet build CivicMobile/CivicMobile.csproj -c Release -f net7.0-android /p:AndroidSigningKeyStore=civic.keystore /p:AndroidSigningKeyAlias=civic_keystore /p:AndroidSigningKeyPass="${{ secrets.CIVIC_ANDROID_KEYSTORE_PASS }}" /p:AndroidSigningStorePass="${{ secrets.CIVIC_ANDROID_KEYSTORE_PASS }}" --no-restore 
    
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
+      with:
+       name: android_bundle
+       path: |
+        ./**/*.aab
+        ./**/*.apk
