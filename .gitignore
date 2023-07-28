@@ -382,3 +382,5 @@ _ReSharper.*
 bin
 obj
 packages
+/*.keystore
+/*.keystore.asc

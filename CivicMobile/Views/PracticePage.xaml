@@ -10,8 +10,13 @@
              Title="{Binding Title}"
              x:Class="CivicMobile.Views.PracticePage">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Next" x:Name="NextQuestion"   Command="{Binding NextQuestionCommand}" />
+    </ContentPage.ToolbarItems>
+
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding LoadExamQuestionsCommand}" />
+        <toolkit:EventToCommandBehavior EventName="Disappearing" Command="{Binding OnPageClosedCleanupCommand}" />
     </ContentPage.Behaviors>
 
     <Page.Resources>
@@ -57,14 +62,14 @@
             </CollectionView>
         </Grid>
 
-        <Button Grid.Row="3"
-                HeightRequest="75"
-                WidthRequest="200"
-                VerticalOptions="Center"
-                x:Name="NextQuestion"
-                Command="{Binding NextQuestionCommand}"
-                IsEnabled="{Binding CanGoNextQuestion}"
-                Text="NEXT QUESTION"
-                TextColor="White" />
+        <!--<Button Grid.Row="3"
+        HeightRequest="75"
+        WidthRequest="200"
+        VerticalOptions="Center"
+        x:Name="NextQuestion"
+        BackgroundColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource White}}"
+        Command="{Binding NextQuestionCommand}"
+        IsEnabled="{Binding CanGoNextQuestion}"
+        Text="NEXT QUESTION" />-->
     </Grid>
 </ContentPage>

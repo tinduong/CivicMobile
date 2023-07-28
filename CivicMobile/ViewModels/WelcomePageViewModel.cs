@@ -18,9 +18,7 @@ public partial class WelcomePageViewModel : BaseViewModel
         set
         {
             var previous = _selectedState;
-            //Preferences.Set("previousLanguage", previous);
             _selectedState = value;
-            //Preferences.Set("selectionLanguage", value);
             OnPropertyChanged();
         }
     }
@@ -28,6 +26,7 @@ public partial class WelcomePageViewModel : BaseViewModel
     public WelcomePageViewModel()
     {
         // get the exam date from the user preferences
+        ExamDate = DateTime.Today.ToString();
         _availableStates = new()
         {
             "Alabama"

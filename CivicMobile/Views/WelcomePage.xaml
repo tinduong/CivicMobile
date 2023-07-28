@@ -2,15 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.WelcomePage"
-             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
-             BackgroundColor="WhiteSmoke">
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui">
     <ContentPage.Behaviors>
-        <mct:StatusBarBehavior StatusBarColor="{StaticResource Primary}" StatusBarStyle="LightContent" />
+        <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark={StaticResource BlackBrush}, Light={StaticResource Primary}}" StatusBarStyle="LightContent" />
     </ContentPage.Behaviors>
     <ScrollView>
-
         <Grid Padding="0">
-
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*" />
                 <RowDefinition Height="2*" />
@@ -18,63 +16,31 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-
                 <Image Source="appwelcome_bg.png" Scale="1.4" TranslationY="-15" TranslationX="-10" Margin="0" />
             </Grid>
-
-            <!--<Grid Grid.Row="1" Padding="25">
-            <Border
-            Padding="24,32"
-            MinimumHeightRequest="350"
-            BackgroundColor="white"
-            HorizontalOptions="Fill"
-            VerticalOptions="End"
-            StrokeThickness="0"
-            Margin="0">
-            <Border.Shadow>
-            <Shadow Brush="gray" Offset="1,1" Opacity="0.3" />
-            </Border.Shadow>
-
-            <VerticalStackLayout>
-            <Label
-            Margin="10"
-            FontSize="17"
-            FontAttributes="Bold"
-            Text="Welcome to the USCIS Study guide"
-            VerticalOptions="Center"
-            HorizontalOptions="Center" />
-            <Label LineBreakMode="WordWrap" Text="The 2008 civics practice test is a study tool to help you test your knowledge of U.S. history and government. Use this online tool in English to prepare for the civics portion of the naturalization test. The civics practice test is also available in Spanish, but please note that the actual test is in English."></Label>
-            <Label Text="USCIS officer will ask you up to 10 questions from the list of 100 civics test questions. You must answer 6 questions correctly to pass the civics test." />
-            </VerticalStackLayout>
-            </Border>
-            </Grid>-->
             <Grid Padding="25" Grid.Row="1" RowSpacing="15">
                 <Border
                     Padding="24,32"
                     MinimumHeightRequest="150"
-                    BackgroundColor="white"
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource White}}"
                     StrokeThickness="0"
                     HorizontalOptions="Fill"
                     VerticalOptions="End"
                     Margin="0">
-                    <Border.Shadow>
-                        <Shadow Brush="gray" Offset="2,0" Opacity="0.3" />
-                    </Border.Shadow>
+
                     <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
                         <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="YOUR STUDY GUIDE INFO" />
                         <VerticalStackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
                             <Label>Select Exam Date</Label>
                             <DatePicker MinimumDate="{Binding MinExamDate}"
-                                        BackgroundColor="Azure"
                                         MaximumDate="12/31/2099"
-                                        Date="06/21/2022" />
+                                        Date="{Binding ExamDate}" />
                         </VerticalStackLayout>
 
                         <VerticalStackLayout Margin="10" HorizontalOptions="Center" VerticalOptions="Center">
                             <Picker
                                 Title="Select your state"
                                 HorizontalOptions="EndAndExpand"
-                                BackgroundColor="Azure"
                                 ItemsSource="{Binding AvailableStates}"
                                 SelectedItem="{Binding SelectedState}"
                                 VerticalOptions="Start" />
