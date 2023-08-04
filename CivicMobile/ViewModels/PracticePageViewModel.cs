@@ -24,6 +24,7 @@ public partial class PracticePageViewModel : BaseViewModel
 
     private QuestionService questionService;
     private readonly IAudioManager audioManager;
+    private readonly TextToSpeechService speakService;
     private readonly CivicDbContext dbContext;
 
     [ObservableProperty]
@@ -32,11 +33,12 @@ public partial class PracticePageViewModel : BaseViewModel
     [ObservableProperty]
     private SelectionMode _selectionMode = SelectionMode.Single;
 
-    public PracticePageViewModel(QuestionService questionService, IAudioManager audioManager, CivicDbContext dbContext)
+    public PracticePageViewModel(QuestionService questionService, IAudioManager audioManager, TextToSpeechService speakService, CivicDbContext dbContext)
     {
         Title = "Practice Exam";
         this.questionService = questionService;
         this.audioManager = audioManager;
+        this.speakService = speakService;
         this.dbContext = dbContext;
     }
 
@@ -89,7 +91,6 @@ public partial class PracticePageViewModel : BaseViewModel
         var currentIndex = CurrentQuestion.QuestionNumber;
         var next = ++currentIndex;
         var nextQuestion = ExamQuestions.FirstOrDefault(item => item.QuestionNumber == next);
-        // check to show the practice exam result
 
         CurrentQuestion = nextQuestion;
         IsQuestionAnswered = false;
@@ -126,7 +127,6 @@ public partial class PracticePageViewModel : BaseViewModel
 
         if (isCorrect)
         {
-            // update the user record
             userRecord.CorrectCount++;
 
             // todo this probably need to be moved out of here

@@ -2,16 +2,49 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.SettingsPage"
+             BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}"
              Title="Settings">
-    <VerticalStackLayout Padding="10">
-        <StackLayout Margin="15" Orientation="Vertical">
-            <Label Text="Studying Language" FontAttributes="Bold"/>
-            <Picker
-                Title="Select Language"
-                HorizontalOptions="StartAndExpand"
-                ItemsSource="{Binding AvailableLanguages}"
-                SelectedItem="{Binding SelectedLanguage}"
-                VerticalOptions="Start" />
-        </StackLayout>
-    </VerticalStackLayout>
+    <!--<VerticalStackLayout Padding="10">
+    <StackLayout Margin="15" Orientation="Vertical">
+    <Label Text="Studying Language" FontAttributes="Bold" />
+    <Picker
+    Title="Select Language"
+    HorizontalOptions="StartAndExpand"
+    ItemsSource="{Binding AvailableLanguages}"
+    SelectedItem="{Binding SelectedLanguage}"
+    VerticalOptions="Start" />
+    </StackLayout>
+    </VerticalStackLayout>-->
+    <Grid RowDefinitions="auto,auto,auto,auto,auto, auto"
+          ColumnDefinitions="8*, 8*"
+          Padding="10"
+          BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}">
+        <!--Reset Preference-->
+        <Button Scale="1"  Text="Reset Preference" HorizontalOptions="StartAndExpand" Command="{Binding ResetPreferenceCommand}" />
+        <!--Select Language-->
+        <Label Grid.Row="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" Grid.Column="0">Studying Language</Label>
+
+        <!-- Zip Code-->
+        <Label Grid.Row="2" VerticalTextAlignment="Center" Grid.Column="0">Zip Code</Label>
+        <Entry Grid.Row="2" Grid.Column="1" Text="{Binding ZipCode}" HorizontalOptions="FillAndExpand" />
+
+        <Picker
+            Grid.Row="1"
+            Grid.Column="1"
+            Title="Select Language"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Start"
+            FontAutoScalingEnabled="True"
+            ItemsSource="{Binding AvailableLanguages}"
+            SelectedItem="{Binding SelectedLanguage}"
+            VerticalOptions="Start" />
+
+        <!--Age Mode-->
+        <Label Grid.Row="3" VerticalTextAlignment="Center" Grid.Column="0">Above 65 only</Label>
+        <Switch Grid.Row="3" Grid.Column="1" IsToggled="{Binding AgeMode}" HorizontalOptions="EndAndExpand" />
+
+        <!--Dark Mode -->
+        <Label Grid.Row="4" VerticalTextAlignment="Center" Grid.Column="0">Dark Mode</Label>
+        <Switch Grid.Row="4" Grid.Column="1" IsToggled="{Binding DarkMode}" HorizontalOptions="EndAndExpand" />
+    </Grid>
 </ContentPage>

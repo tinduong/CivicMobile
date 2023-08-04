@@ -3,8 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.MainPage"
              xmlns:viewmodel="clr-namespace:CivicMobile.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Name="HomePage"
-             Title="{Binding Title}" BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource White}}">
+             Title="{Binding Title}" BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}">
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding LoadQuestionsCommand}" />
+    </ContentPage.Behaviors>
     <Grid>
 
         <RefreshView Command="{Binding LoadQuestionsCommand}" IsRefreshing="{Binding IsRefreshing}">

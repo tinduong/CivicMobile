@@ -16,7 +16,7 @@ public partial class PracticePage : ContentPage
     protected override async void OnAppearing()
     {
         base.OnAppearing();
-        await ViewModel.LoadExamQuestions();
+        //await ViewModel.LoadExamQuestions();
     }
 
     protected override void OnDisappearing()

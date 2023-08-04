@@ -3,6 +3,7 @@ using CivicMobile.Services;
 using CivicMobile.ViewModels;
 using CivicMobile.Views;
 using CommunityToolkit.Maui;
+using ITextToSpeech = CivicMobile.Interfaces.ITextToSpeech;
 using Plugin.Maui.Audio;
 
 namespace CivicMobile;
@@ -23,6 +24,7 @@ public static class MauiProgram
 
         // register services
         builder.Services.AddTransient<QuestionService>();
+        builder.Services.AddTransient<TextToSpeechService>();
         builder.Services.AddSingleton(AudioManager.Current);
         builder.Services.AddSingleton<CivicDbContext>();
 

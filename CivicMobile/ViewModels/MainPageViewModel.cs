@@ -65,6 +65,7 @@ public partial class MainPageViewModel : BaseViewModel
         }
         catch (Exception e)
         {
+            // probably offline so load from db
             await Shell.Current.DisplayAlert("Error", $"Loaded with error {e}", "close");
             throw;
         }
