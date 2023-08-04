@@ -28,7 +28,6 @@ public class CivicDbContext
 
     private async Task CreateDbIfNotExisted<TModel>() where TModel : class, new()
     {
-        var test = Constants.DatabasePath;
         if (Database is not null) return;
 
         Database = new SQLiteAsyncConnection(Constants.DatabasePath, Constants.Flags);
@@ -42,14 +41,18 @@ public class CivicDbContext
         return result;
     }
 
-    // Insert or update it
     public async Task Add<TModel>(TModel model) where TModel : class, new()
     {
         await CreateDbIfNotExisted<TModel>();
         await Database.InsertAsync(model);
     }
 
-    // update model
+    public async Task AddMultiple<TModel>(IEnumerable<TModel> items) where TModel : class, new()
+    {
+        await CreateDbIfNotExisted<TModel>();
+        await Database.InsertAllAsync(items);
+    }
+
     public async Task Update<TModel>(TModel model) where TModel : class, new()
     {
         await CreateDbIfNotExisted<TModel>();

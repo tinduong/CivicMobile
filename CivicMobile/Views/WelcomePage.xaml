@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.WelcomePage"
-             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Gray900}}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}"
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui">
     <ContentPage.Behaviors>
-        <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark={StaticResource BlackBrush}, Light={StaticResource Primary}}" StatusBarStyle="LightContent" />
+        <mct:StatusBarBehavior StatusBarColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource Primary}}" StatusBarStyle="LightContent" />
     </ContentPage.Behaviors>
     <ScrollView>
         <Grid Padding="0">
@@ -18,34 +18,29 @@
             <Grid Grid.Row="0">
                 <Image Source="appwelcome_bg.png" Scale="1.4" TranslationY="-15" TranslationX="-10" Margin="0" />
             </Grid>
-            <Grid Padding="25" Grid.Row="1" RowSpacing="15">
+            <Grid Grid.Row="1" RowSpacing="15">
                 <Border
-                    Padding="24,32"
-                    MinimumHeightRequest="150"
-                    BackgroundColor="{AppThemeBinding Dark={StaticResource Gray900}, Light={StaticResource White}}"
-                    StrokeThickness="0"
-                    HorizontalOptions="Fill"
-                    VerticalOptions="End"
-                    Margin="0">
+                    Margin="10"
+                    Padding="10"
+                    WidthRequest="350"
+                    Stroke="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Black}}"
+                    StrokeThickness="0.5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="FillAndExpand"
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="5" />
+                    </Border.StrokeShape>
+          
 
-                    <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-                        <Label HorizontalOptions="CenterAndExpand" FontAttributes="Bold" Text="YOUR STUDY GUIDE INFO" />
-                        <VerticalStackLayout Margin="10" VerticalOptions="Center" HorizontalOptions="Center">
-                            <Label>Select Exam Date</Label>
-                            <DatePicker MinimumDate="{Binding MinExamDate}"
-                                        MaximumDate="12/31/2099"
-                                        Date="{Binding ExamDate}" />
-                        </VerticalStackLayout>
-
-                        <VerticalStackLayout Margin="10" HorizontalOptions="Center" VerticalOptions="Center">
-                            <Picker
-                                Title="Select your state"
-                                HorizontalOptions="EndAndExpand"
-                                ItemsSource="{Binding AvailableStates}"
-                                SelectedItem="{Binding SelectedState}"
-                                VerticalOptions="Start" />
-                        </VerticalStackLayout>
-                    </VerticalStackLayout>
+                    <Label
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Primary}}"
+                        HorizontalTextAlignment="Center"
+                        Text="The 2008 civics practice test is a study tool to help you test your knowledge of U.S. history and government. Use this online tool in English to prepare for the civics portion of the naturalization test. The civics practice test is also available in Multiple languages, but please note that the actual test is in English."
+                        VerticalOptions="CenterAndExpand"
+                        VerticalTextAlignment="Center" />
                 </Border>
             </Grid>
         </Grid>

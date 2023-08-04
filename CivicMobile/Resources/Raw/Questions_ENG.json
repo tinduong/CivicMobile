@@ -1,0 +1,1718 @@
+[
+  {
+    "QuestionDescription": "What is the supreme law of the land?",
+    "QuestionNumber": 1,
+    "Answers": [
+      {
+        "AnswerText": "the Constitution",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What does the Constitution do?",
+    "QuestionNumber": 2,
+    "Answers": [
+      {
+        "AnswerText": "sets up the government",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "defines the government",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "protects basic rights of Americans",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "The idea of self-government is in the first three words of the Constitution. What are these words?",
+    "QuestionNumber": 3,
+    "Answers": [
+      {
+        "AnswerText": "We the People",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is an amendment?",
+    "QuestionNumber": 4,
+    "Answers": [
+      {
+        "AnswerText": "a change (to the Constitution)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "an addition (to the Constitution)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What do we call the first ten amendments to the Constitution?",
+    "QuestionNumber": 5,
+    "Answers": [
+      {
+        "AnswerText": "the Bill of Rights",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is one right or freedom from the First Amendment?*",
+    "QuestionNumber": 6,
+    "Answers": [
+      {
+        "AnswerText": "speech",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "religion",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "assembly",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "press",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "petition the government",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "How many amendments does the Constitution have?",
+    "QuestionNumber": 7,
+    "Answers": [
+      {
+        "AnswerText": "twenty-seven (27)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What did the Declaration of Independence do?",
+    "QuestionNumber": 8,
+    "Answers": [
+      {
+        "AnswerText": "announced our independence (from Great Britain)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "declared our independence (from Great Britain)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "said that the United States is free (from Great Britain)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are two rights in the Declaration of Independence?",
+    "QuestionNumber": 9,
+    "Answers": [
+      {
+        "AnswerText": "life",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "liberty",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "pursuit of happiness",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is freedom of religion?",
+    "QuestionNumber": 10,
+    "Answers": [
+      {
+        "AnswerText": "You can practice any religion, or not practice a religion.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the economic system in the United States?*",
+    "QuestionNumber": 11,
+    "Answers": [
+      {
+        "AnswerText": "capitalist economy",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "market economy",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the “rule of law”?",
+    "QuestionNumber": 12,
+    "Answers": [
+      {
+        "AnswerText": "Everyone must follow the law.",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Leaders must obey the law.",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Government must obey the law.",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "No one is above the law.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one branch or part of the government?*",
+    "QuestionNumber": 13,
+    "Answers": [
+      {
+        "AnswerText": "Congress",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "legislative",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "President",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "executive",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "the courts",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "judicial",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What stops one branch of government from becoming too powerful?",
+    "QuestionNumber": 14,
+    "Answers": [
+      {
+        "AnswerText": "checks and balances",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "separation of powers",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is in charge of the executive branch?",
+    "QuestionNumber": 15,
+    "Answers": [
+      {
+        "AnswerText": "the President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who makes federal laws?",
+    "QuestionNumber": 16,
+    "Answers": [
+      {
+        "AnswerText": "Congress",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Senate and House (of Representatives)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(U.S. or national) legislature",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are the two parts of the U.S. Congress?*",
+    "QuestionNumber": 17,
+    "Answers": [
+      {
+        "AnswerText": "the Senate and House (of Representatives)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "How many U.S. Senators are there?",
+    "QuestionNumber": 18,
+    "Answers": [
+      {
+        "AnswerText": "one hundred (100)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "We elect a U.S. Senator for how many years?",
+    "QuestionNumber": 19,
+    "Answers": [
+      {
+        "AnswerText": "six (6)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is one of your state’s U.S. Senators now?*",
+    "QuestionNumber": 20,
+    "Answers": [
+      {
+        "AnswerText": "Answers will vary. [District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. Senators.]",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "The House of Representatives has how many voting members?",
+    "QuestionNumber": 21,
+    "Answers": [
+      {
+        "AnswerText": "four hundred thirty-five (435)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "We elect a U.S. Representative for how many years?",
+    "QuestionNumber": 22,
+    "Answers": [
+      {
+        "AnswerText": "two (2)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name your U.S. Representative?",
+    "QuestionNumber": 23,
+    "Answers": [
+      {
+        "AnswerText": "Answers will vary. [Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner. Also acceptable is any statement that the territory has no (voting) Representatives in Congress.]",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who does a U.S. Senator represent?",
+    "QuestionNumber": 24,
+    "Answers": [
+      {
+        "AnswerText": "all people of the state",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Why do some states have more Representatives than other states?",
+    "QuestionNumber": 25,
+    "Answers": [
+      {
+        "AnswerText": "(because of) the state’s population",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(because) they have more people",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(because) some states have more people",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "We elect a President for how many years?",
+    "QuestionNumber": 26,
+    "Answers": [
+      {
+        "AnswerText": "four (4)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "In what month do we vote for President?*",
+    "QuestionNumber": 27,
+    "Answers": [
+      {
+        "AnswerText": "November",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the name of the President of the United States now?*",
+    "QuestionNumber": 28,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the name of the President of the United States.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the name of the Vice President of the United States now?",
+    "QuestionNumber": 29,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the name of the Vice President of the United States.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "If the President can no longer serve, who becomes President?",
+    "QuestionNumber": 30,
+    "Answers": [
+      {
+        "AnswerText": "the Vice President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "If both the President and the Vice President can no longer serve, who becomes President?",
+    "QuestionNumber": 31,
+    "Answers": [
+      {
+        "AnswerText": "the Speaker of the House",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is the Commander in Chief of the military?",
+    "QuestionNumber": 32,
+    "Answers": [
+      {
+        "AnswerText": "the President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who signs bills to become laws?",
+    "QuestionNumber": 33,
+    "Answers": [
+      {
+        "AnswerText": "the President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who vetoes bills?",
+    "QuestionNumber": 34,
+    "Answers": [
+      {
+        "AnswerText": "the President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What does the President’s Cabinet do?",
+    "QuestionNumber": 35,
+    "Answers": [
+      {
+        "AnswerText": "advises the President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are two Cabinet-level positions?",
+    "QuestionNumber": 36,
+    "Answers": [
+      {
+        "AnswerText": "Secretary of Agriculture",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Commerce",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Defense",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Education",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Energy",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Health and Human Services",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Homeland Security",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Housing and Urban Development",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of the Interior",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Labor",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of State",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Transportation",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of the Treasury",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Secretary of Veterans Affairs",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Attorney General",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Vice President",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What does the judicial branch do?",
+    "QuestionNumber": 37,
+    "Answers": [
+      {
+        "AnswerText": "reviews laws",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "explains laws",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "resolves disputes (disagreements)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "decides if a law goes against the Constitution",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the highest court in the United States?",
+    "QuestionNumber": 38,
+    "Answers": [
+      {
+        "AnswerText": "the Supreme Court",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "How many justices are on the Supreme Court?",
+    "QuestionNumber": 39,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the number of justices on the Supreme Court.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is the Chief Justice of the United States now?",
+    "QuestionNumber": 40,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the name of the Chief Justice of the United States.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
+    "QuestionNumber": 41,
+    "Answers": [
+      {
+        "AnswerText": "to print money",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "to declare war",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "to create an army",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "to make treaties",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Under our Constitution, some powers belong to the states. What is one power of the states?",
+    "QuestionNumber": 42,
+    "Answers": [
+      {
+        "AnswerText": "provide schooling and education",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "provide protection (police)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "provide safety (fire departments)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "give a driver’s license",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "approve zoning and land use",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is the Governor of your state now?",
+    "QuestionNumber": 43,
+    "Answers": [
+      {
+        "AnswerText": "Answers will vary. [District of Columbia residents should answer that D.C. does not have a Governor.]",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the capital of your state?*",
+    "QuestionNumber": 44,
+    "Answers": [
+      {
+        "AnswerText": "Answers will vary. [District of Columbia residents should answer that D.C. is not a state and does not have a capital. Residents of U.S. territories should name the capital of the territory.]",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are the two major political parties in the United States?*",
+    "QuestionNumber": 45,
+    "Answers": [
+      {
+        "AnswerText": "Democratic and Republican",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the political party of the President now?",
+    "QuestionNumber": 46,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the political party of the President.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the name of the Speaker of the House of Representatives now?",
+    "QuestionNumber": 47,
+    "Answers": [
+      {
+        "AnswerText": "Visit uscis.gov/citizenship/testupdates for the name of the Speaker of the House of Representatives.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "There are four amendments to the Constitution about who can vote. Describe one of them?",
+    "QuestionNumber": 48,
+    "Answers": [
+      {
+        "AnswerText": "Citizens eighteen (18) and older (can vote).",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "You don’t have to pay (a poll tax) to vote.",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Any citizen can vote. (Women and men can vote.)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "A male citizen of any race (can vote).",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is one responsibility that is only for United States citizens?*",
+    "QuestionNumber": 49,
+    "Answers": [
+      {
+        "AnswerText": "serve on a jury",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "vote in a federal election",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one right only for United States citizens?",
+    "QuestionNumber": 50,
+    "Answers": [
+      {
+        "AnswerText": "vote in a federal election",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "run for federal office",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are two rights of everyone living in the United States?",
+    "QuestionNumber": 51,
+    "Answers": [
+      {
+        "AnswerText": "freedom of expression",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freedom of speech",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freedom of assembly",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freedom to petition the government",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freedom of religion",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "the right to bear arms",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What do we show loyalty to when we say the Pledge of Allegiance?",
+    "QuestionNumber": 52,
+    "Answers": [
+      {
+        "AnswerText": "the United States",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "the flag",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is one promise you make when you become a United States citizen?",
+    "QuestionNumber": 53,
+    "Answers": [
+      {
+        "AnswerText": "give up loyalty to other countries",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "defend the Constitution and laws of the United States",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "obey the laws of the United States",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "serve in the U.S. military (if needed)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "serve (do important work for) the nation (if needed)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "be loyal to the United States",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "How old do citizens have to be to vote for President?*",
+    "QuestionNumber": 54,
+    "Answers": [
+      {
+        "AnswerText": "eighteen (18) and older",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What are two ways that Americans can participate in their democracy?",
+    "QuestionNumber": 55,
+    "Answers": [
+      {
+        "AnswerText": "vote",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "join a political party",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "help with a campaign",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "join a civic group",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "join a community group",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "give an elected official your opinion on an issue",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "call Senators and Representatives",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "publicly support or oppose an issue or policy",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "run for office",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "write to a newspaper",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "When is the last day you can send in federal income tax forms?*",
+    "QuestionNumber": 56,
+    "Answers": [
+      {
+        "AnswerText": "April 15",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "When must all men register for the Selective Service?",
+    "QuestionNumber": 57,
+    "Answers": [
+      {
+        "AnswerText": "at age eighteen (18)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "between eighteen (18) and twenty-six (26)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is one reason colonists came to America?",
+    "QuestionNumber": 58,
+    "Answers": [
+      {
+        "AnswerText": "freedom",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "political liberty",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "religious freedom",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "economic opportunity",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "practice their religion",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "escape persecution",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who lived in America before the Europeans arrived?",
+    "QuestionNumber": 59,
+    "Answers": [
+      {
+        "AnswerText": "American Indians",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Native Americans",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What group of people was taken to America and sold as slaves?",
+    "QuestionNumber": 60,
+    "Answers": [
+      {
+        "AnswerText": "Africans",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "people from Africa",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Why did the colonists fight the British?",
+    "QuestionNumber": 61,
+    "Answers": [
+      {
+        "AnswerText": "because of high taxes (taxation without representation)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "because the British army stayed in their houses (boarding, quartering)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "because they didn’t have self-government",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who wrote the Declaration of Independence?",
+    "QuestionNumber": 62,
+    "Answers": [
+      {
+        "AnswerText": "(Thomas) Jefferson",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "When was the Declaration of Independence adopted?",
+    "QuestionNumber": 63,
+    "Answers": [
+      {
+        "AnswerText": "July 4, 1776",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "There were 13 original states. Name three?",
+    "QuestionNumber": 64,
+    "Answers": [
+      {
+        "AnswerText": "New Hampshire",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Massachusetts",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Rhode Island",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Connecticut",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "New York",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "New Jersey",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Pennsylvania",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Delaware",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Maryland",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Virginia",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "North Carolina",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "South Carolina",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Georgia",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What happened at the Constitutional Convention?",
+    "QuestionNumber": 65,
+    "Answers": [
+      {
+        "AnswerText": "The Constitution was written.",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "The Founding Fathers wrote the Constitution.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "When was the Constitution written?",
+    "QuestionNumber": 66,
+    "Answers": [
+      {
+        "AnswerText": "1787",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers?",
+    "QuestionNumber": 67,
+    "Answers": [
+      {
+        "AnswerText": "(James) Madison",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(Alexander) Hamilton",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(John) Jay",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Publius",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is one thing Benjamin Franklin is famous for?",
+    "QuestionNumber": 68,
+    "Answers": [
+      {
+        "AnswerText": "U.S. diplomat",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "oldest member of the Constitutional Convention",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "first Postmaster General of the United States",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "writer of “Poor Richard’s Almanac”",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "started the first free libraries",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who is the “Father of Our Country”?",
+    "QuestionNumber": 69,
+    "Answers": [
+      {
+        "AnswerText": "(George) Washington",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who was the first President?*",
+    "QuestionNumber": 70,
+    "Answers": [
+      {
+        "AnswerText": "(George) Washington",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What territory did the United States buy from France in 1803?",
+    "QuestionNumber": 71,
+    "Answers": [
+      {
+        "AnswerText": "the Louisiana Territory",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Louisiana",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one war fought by the United States in the 1800s?",
+    "QuestionNumber": 72,
+    "Answers": [
+      {
+        "AnswerText": "War of 1812",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Mexican-American War",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Civil War",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Spanish-American War",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name the U.S. war between the North and the South?",
+    "QuestionNumber": 73,
+    "Answers": [
+      {
+        "AnswerText": "the Civil War",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "the War between the States",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one problem that led to the Civil War?",
+    "QuestionNumber": 74,
+    "Answers": [
+      {
+        "AnswerText": "slavery",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "economic reasons",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "states’ rights",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What was one important thing that Abraham Lincoln did?*",
+    "QuestionNumber": 75,
+    "Answers": [
+      {
+        "AnswerText": "freed the slaves (Emancipation Proclamation)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "saved (or preserved) the Union",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "led the United States during the Civil War",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What did the Emancipation Proclamation do?",
+    "QuestionNumber": 76,
+    "Answers": [
+      {
+        "AnswerText": "freed the slaves",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freed slaves in the Confederacy",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freed slaves in the Confederate states",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "freed slaves in most Southern states",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What did Susan B. Anthony do?",
+    "QuestionNumber": 77,
+    "Answers": [
+      {
+        "AnswerText": "fought for women’s rights",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "fought for civil rights",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one war fought by the United States in the 1900s?*",
+    "QuestionNumber": 78,
+    "Answers": [
+      {
+        "AnswerText": "World War I",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "World War II",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Korean War",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Vietnam War",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "(Persian) Gulf War",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who was President during World War I?",
+    "QuestionNumber": 79,
+    "Answers": [
+      {
+        "AnswerText": "(Woodrow) Wilson",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who was President during the Great Depression and World War II?",
+    "QuestionNumber": 80,
+    "Answers": [
+      {
+        "AnswerText": "(Franklin) Roosevelt",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Who did the United States fight in World War II?",
+    "QuestionNumber": 81,
+    "Answers": [
+      {
+        "AnswerText": "Japan, Germany, and Italy",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Before he was President, Eisenhower was a general. What war was he in?",
+    "QuestionNumber": 82,
+    "Answers": [
+      {
+        "AnswerText": "World War II",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "During the Cold War, what was the main concern of the United States?",
+    "QuestionNumber": 83,
+    "Answers": [
+      {
+        "AnswerText": "Communism",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What movement tried to end racial discrimination?",
+    "QuestionNumber": 84,
+    "Answers": [
+      {
+        "AnswerText": "civil rights (movement)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What did Martin Luther King, Jr. do?*",
+    "QuestionNumber": 85,
+    "Answers": [
+      {
+        "AnswerText": "fought for civil rights",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "worked for equality for all Americans",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What major event happened on September 11, 2001, in the United States?",
+    "QuestionNumber": 86,
+    "Answers": [
+      {
+        "AnswerText": "Terrorists attacked the United States.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one American Indian tribe in the United States?",
+    "QuestionNumber": 87,
+    "Answers": [
+      {
+        "AnswerText": "[USCIS Officers will be supplied with a list of federally recognized American Indian tribes.]",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Cherokee",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Navajo",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Sioux",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Chippewa",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Choctaw",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Pueblo",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Apache",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Iroquois",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Creek",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Blackfeet",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Seminole",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Cheyenne",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Arawak",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Shawnee",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Mohegan",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Huron",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Oneida",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Lakota",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Crow",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Teton",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Hopi",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Inuit",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one of the two longest rivers in the United States?",
+    "QuestionNumber": 88,
+    "Answers": [
+      {
+        "AnswerText": "Missouri (River)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Mississippi (River)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What ocean is on the West Coast of the United States?",
+    "QuestionNumber": 89,
+    "Answers": [
+      {
+        "AnswerText": "Pacific (Ocean)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What ocean is on the East Coast of the United States?",
+    "QuestionNumber": 90,
+    "Answers": [
+      {
+        "AnswerText": "Atlantic (Ocean)",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one U.S. territory?",
+    "QuestionNumber": 91,
+    "Answers": [
+      {
+        "AnswerText": "Puerto Rico",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "U.S. Virgin Islands",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "American Samoa",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Northern Mariana Islands",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Guam",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one state that borders Canada?",
+    "QuestionNumber": 92,
+    "Answers": [
+      {
+        "AnswerText": "Maine",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "New Hampshire",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Vermont",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "New York",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Pennsylvania",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Ohio",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Michigan",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Minnesota",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "North Dakota",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Montana",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Idaho",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Washington",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Alaska",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name one state that borders Mexico?",
+    "QuestionNumber": 93,
+    "Answers": [
+      {
+        "AnswerText": "California",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Arizona",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "New Mexico",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Texas",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the capital of the United States?*",
+    "QuestionNumber": 94,
+    "Answers": [
+      {
+        "AnswerText": "Washington, D.C.",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Where is the Statue of Liberty?*",
+    "QuestionNumber": 95,
+    "Answers": [
+      {
+        "AnswerText": "New York (Harbor)",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Liberty Island",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "[Also acceptable are New Jersey, near New York City, and on the Hudson (River).]",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Why does the flag have 13 stripes?",
+    "QuestionNumber": 96,
+    "Answers": [
+      {
+        "AnswerText": "because there were 13 original colonies",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "because the stripes represent the original colonies",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Why does the flag have 50 stars?*",
+    "QuestionNumber": 97,
+    "Answers": [
+      {
+        "AnswerText": "because there is one star for each state",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "because each star represents a state",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "because there are 50 states",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "What is the name of the national anthem?",
+    "QuestionNumber": 98,
+    "Answers": [
+      {
+        "AnswerText": "The Star-Spangled Banner",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "When do we celebrate Independence Day?*",
+    "QuestionNumber": 99,
+    "Answers": [
+      {
+        "AnswerText": "July 4",
+        "IsCorrect": true
+      }
+    ]
+  },
+  {
+    "QuestionDescription": "Name two national U.S. holidays?",
+    "QuestionNumber": 100,
+    "Answers": [
+      {
+        "AnswerText": "New Year’s Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Martin Luther King, Jr. Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Presidents’ Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Memorial Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Independence Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Labor Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Columbus Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Veterans Day",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Thanksgiving",
+        "IsCorrect": true
+      },
+      {
+        "AnswerText": "Christmas",
+        "IsCorrect": true
+      }
+    ]
+  }
+]

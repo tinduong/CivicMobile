@@ -70,6 +70,8 @@
 		<None Remove="Resources\Images\Flags.jpg" />
 		<None Remove="Resources\Images\home.png" />
 		<None Remove="Resources\Images\study.png" />
+		<None Remove="Resources\Raw\PracticeTest_ENG.json" />
+		<None Remove="Resources\Raw\Questions_ENG.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -82,6 +84,7 @@
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 		<PackageReference Include="Microsoft.AppCenter.Analytics" Version="5.0.2" />
 		<PackageReference Include="Microsoft.AppCenter.Crashes" Version="5.0.2" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Plugin.Maui.Audio" Version="1.0.0" />
 		<PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
 		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />

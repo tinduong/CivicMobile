@@ -1,0 +1,1062 @@
+[
+    {
+        "QuestionDescription": "What are two rights of everyone living in the United States? Choose one:",
+        "QuestionNumber": 1,
+        "Answers": [
+            {
+                "AnswerText": "Freedom to petition the government and freedom to disobey traffic laws.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freedom of worship and freedom to make treaties with other countries.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freedom of speech and freedom to run for president.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freedom of speech and freedom of worship.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is freedom of religion? Choose one:",
+        "QuestionNumber": 2,
+        "Answers": [
+            {
+                "AnswerText": "You can’t choose the time you practice your religion.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "You must choose a religion.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "You can practice any religion, or not practice a religion.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "No one can practice a religion.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who is in charge of the executive branch? Choose one:",
+        "QuestionNumber": 3,
+        "Answers": [
+            {
+                "AnswerText": "The Speaker of the House.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Prime Minister.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Chief Justice.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What do we call the first ten amendments to the Constitution? Choose one:",
+        "QuestionNumber": 4,
+        "Answers": [
+            {
+                "AnswerText": "The Articles of Confederation.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The inalienable rights.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Declaration of Independence.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Bill of Rights.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Under our Constitution, some powers belong to the states. What is one power of the states? Choose one:",
+        "QuestionNumber": 5,
+        "Answers": [
+            {
+                "AnswerText": "Make treaties.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Provide schooling and education.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Create an army.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Coin or print money.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who is the Commander in Chief of the military? Choose one:",
+        "QuestionNumber": 6,
+        "Answers": [
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Vice-President.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Secretary of Defense.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Attorney General.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is one reason colonists came to America? Choose one:",
+        "QuestionNumber": 7,
+        "Answers": [
+            {
+                "AnswerText": "For the experience traveling across the ocean.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freedom.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "To join a civic group.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "None of these answers.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who is the “Father of Our Country”? Choose one:",
+        "QuestionNumber": 8,
+        "Answers": [
+            {
+                "AnswerText": "George Washington.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Thomas Jefferson.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Abraham Lincoln.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Patrick Henry.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What group of people was taken to America and sold as slaves? Choose one:",
+        "QuestionNumber": 9,
+        "Answers": [
+            {
+                "AnswerText": "English.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Africans.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Canadians.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Dutch.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "We elect a U.S. Senator for how many years? Choose one:",
+        "QuestionNumber": 10,
+        "Answers": [
+            {
+                "AnswerText": "Ten (10).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Four (4).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Two (2).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Six (6).",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What stops one branch of government from becoming too powerful? Choose one:",
+        "QuestionNumber": 11,
+        "Answers": [
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Checks and balances.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The people.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freedom of speech.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "We elect a President for how many years? Choose one:",
+        "QuestionNumber": 12,
+        "Answers": [
+            {
+                "AnswerText": "Eight (8).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Two (2).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Four (4).",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Ten (10).",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "The idea of self-government is in the first three words of the Constitution. What are these words? Choose one:",
+        "QuestionNumber": 13,
+        "Answers": [
+            {
+                "AnswerText": "We the People.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Congress shall make.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "We the British.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "We the Colonists.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who makes federal laws? Choose one:",
+        "QuestionNumber": 14,
+        "Answers": [
+            {
+                "AnswerText": "Congress.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The states.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Supreme Court.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What did Martin Luther King, Jr. do? Choose one:",
+        "QuestionNumber": 15,
+        "Answers": [
+            {
+                "AnswerText": "Became a U.S. Senator.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Fought for civil rights.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Fought for women’s suffrage.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Ran for President of the United States.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is the “rule of law”? Choose one:",
+        "QuestionNumber": 16,
+        "Answers": [
+            {
+                "AnswerText": "Everyone but the President must follow the law.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Government does not have to follow the law.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "All laws must be the same in every state.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Everyone must follow the law.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What does the Constitution do? Choose one:",
+        "QuestionNumber": 17,
+        "Answers": [
+            {
+                "AnswerText": "Defines the government.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Sets up the government.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Protects basic rights of Americans.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "All of these answers.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who lived in America before the Europeans arrived? Choose one:",
+        "QuestionNumber": 18,
+        "Answers": [
+            {
+                "AnswerText": "American Indians.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Floridians.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "No one.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Canadians.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What did Susan B. Anthony do? Choose one:",
+        "QuestionNumber": 19,
+        "Answers": [
+            {
+                "AnswerText": "Made the first flag of the United States.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Founded the Red Cross.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Was the first woman elected to the House of Representatives.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Fought for women’s rights.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What are the two major political parties in the United States today? Choose one:",
+        "QuestionNumber": 20,
+        "Answers": [
+            {
+                "AnswerText": "Reform and Green.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "American and Bull-Moose.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Democratic-Republican and Whig.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Democratic and Republican.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government? Choose one:",
+        "QuestionNumber": 21,
+        "Answers": [
+            {
+                "AnswerText": "To provide police departments.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "To issue driver’s licenses.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "To make treaties.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "To provide schooling.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who does a U.S. Senator represent? Choose one:",
+        "QuestionNumber": 22,
+        "Answers": [
+            {
+                "AnswerText": "All people of the state in which (s)he was elected.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "All people of the state who belong to the Senator’s political party.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The state legislatures.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Only the people in the state who voted for the Senator.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "How old do citizens have to be to vote for President? Choose one:",
+        "QuestionNumber": 23,
+        "Answers": [
+            {
+                "AnswerText": "Thirty-five (35) or older.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Sixteen (16) or older.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Twenty-one (21) or older.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Eighteen (18) or older.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What happened at the Constitutional Convention? Choose one:",
+        "QuestionNumber": 24,
+        "Answers": [
+            {
+                "AnswerText": "The Declaration of Independence was written.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Emancipation Proclamation was written.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Constitution was written.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Virginia Declaration of Rights was written.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is one thing Benjamin Franklin is famous for? Choose one:",
+        "QuestionNumber": 25,
+        "Answers": [
+            {
+                "AnswerText": "Youngest member of the Constitutional Convention.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Inventor of the airplane.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Third President of the United States.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "U.S. diplomat.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What major event happened on September 11, 2001, in the United States? Choose one:",
+        "QuestionNumber": 26,
+        "Answers": [
+            {
+                "AnswerText": "The accident at Three Mile Island Nuclear Power Plant occurred.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Hurricane Andrew struck the United States.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Terrorists attacked the United States.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Japanese attacked Pearl Harbor.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What does the judicial branch do? Choose one:",
+        "QuestionNumber": 27,
+        "Answers": [
+            {
+                "AnswerText": "Decides if a law goes against the Constitution.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Reviews laws.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Resolves disputes.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "All of the above.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What do we show loyalty to when we say the Pledge of Allegiance? Choose one:",
+        "QuestionNumber": 28,
+        "Answers": [
+            {
+                "AnswerText": "The United States.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Congress.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The state where you live.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who wrote the Declaration of Independence? Choose one:",
+        "QuestionNumber": 29,
+        "Answers": [
+            {
+                "AnswerText": "Abraham Lincoln.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "James Madison.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "George Washington.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Thomas Jefferson.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What are two ways that Americans can participate in their democracy? Choose one:",
+        "QuestionNumber": 30,
+        "Answers": [
+            {
+                "AnswerText": "Write to a newspaper and call Senators and Representatives.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Give an elected official your opinion on an issue and join a community group.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Vote and join a civic group.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "All of these answers.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who signs bills to become laws? Choose one:",
+        "QuestionNumber": 31,
+        "Answers": [
+            {
+                "AnswerText": "The Chief Justice of the Supreme Court.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Vice President.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Secretary of State.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The President.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "The House of Representatives has how many voting members? Choose one:",
+        "QuestionNumber": 32,
+        "Answers": [
+            {
+                "AnswerText": "Four hundred forty-one (441).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Four hundred thirty-five (435).",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Two hundred (200).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "One hundred (100).",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Why do some states have more Representatives than other states? Choose one:",
+        "QuestionNumber": 33,
+        "Answers": [
+            {
+                "AnswerText": "Because the state's Representatives have seniority in the House of Representatives.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Because of the state's population.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Because of the geographical size of the state.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Because of the state's location.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "All of the above",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is an amendment? Choose one:",
+        "QuestionNumber": 34,
+        "Answers": [
+            {
+                "AnswerText": "An addition (to the Constitution).",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Preamble to the Constitution.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "An introduction.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The beginning of the Declaration of Independence.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is one responsibility that is only for United States citizens? Choose one:",
+        "QuestionNumber": 35,
+        "Answers": [
+            {
+                "AnswerText": "Pay taxes.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Obey the law.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Be respectful of others.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Serve on a jury.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Why does the flag have 13 stripes? Choose one:",
+        "QuestionNumber": 36,
+        "Answers": [
+            {
+                "AnswerText": "Because the stripes represent the original colonies.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Because the stripes represent the number of signatures on the U.S. Constitution.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Because it was considered lucky to have 13 stripes on the flag.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Because the stripes represent the members of the Second Continental Congress.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is the economic system in the United States? Choose one:",
+        "QuestionNumber": 37,
+        "Answers": [
+            {
+                "AnswerText": "Communist economy.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Capitalist economy.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Socialist economy.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "None of these answers.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "When do we celebrate Independence Day? Choose one:",
+        "QuestionNumber": 38,
+        "Answers": [
+            {
+                "AnswerText": "January 1.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "July 4.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "June 30.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "March 4.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What are the two parts of the U.S. Congress? Choose one:",
+        "QuestionNumber": 39,
+        "Answers": [
+            {
+                "AnswerText": "The House of Representatives and the courts.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The House of Lords and the House of Commons.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Senate and House of Representatives.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Senate and the courts.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is the supreme law of the land? Choose one:",
+        "QuestionNumber": 40,
+        "Answers": [
+            {
+                "AnswerText": "The Articles of Confederation.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Constitution.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "The Emancipation Proclamation.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "The Declaration of Independence.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "We elect a U.S. Representative for how many years? Choose one:",
+        "QuestionNumber": 41,
+        "Answers": [
+            {
+                "AnswerText": "Six (6).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Two (2).",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Four (4).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Eight (8).",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What are two rights in the Declaration of Independence? Choose one:",
+        "QuestionNumber": 42,
+        "Answers": [
+            {
+                "AnswerText": "Life and death.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Life and pursuit of happiness.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Liberty and justice.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Life and the right to own a home.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What did the Declaration of Independence do? Choose one:",
+        "QuestionNumber": 43,
+        "Answers": [
+            {
+                "AnswerText": "Declared our independence from Great Britain.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Declared our independence from France.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Gave women the right to vote.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freed the slaves.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What is one right or freedom granted by the First Amendment? Choose one:",
+        "QuestionNumber": 44,
+        "Answers": [
+            {
+                "AnswerText": "Trial by jury.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "To vote.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "To bear arms.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Speech.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "What did the Emancipation Proclamation do? Choose one:",
+        "QuestionNumber": 45,
+        "Answers": [
+            {
+                "AnswerText": "Gave the United States independence from Great Britain.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Ended World War I.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Gave women the right to vote.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Freed slaves in most Southern states.",
+                "IsCorrect": true
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "How many U.S. senators are there?",
+        "QuestionNumber": 46,
+        "Answers": [
+            {
+                "AnswerText": "Fifty-two (52).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Four hundred thirty-five (435).",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "One hundred (100).",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Fifty (50).",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription": "Who was the first President? Choose one:",
+        "QuestionNumber": 47,
+        "Answers": [
+            {
+                "AnswerText": "George Washington.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "John Adams.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Thomas Jefferson.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Abraham Lincoln.",
+                "IsCorrect": false
+            }
+        ]
+    },
+    {
+        "QuestionDescription":"Name one branch or part of the government. Choose one:",
+        "QuestionNumber": 48,
+        "Answers": [
+            {
+                "AnswerText": "State government.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "Legislative.",
+                "IsCorrect": true
+            },
+            {
+                "AnswerText": "Parliament.",
+                "IsCorrect": false
+            },
+            {
+                "AnswerText": "United Nations.",
+                "IsCorrect": false
+            }
+        ]
+    }
+]
