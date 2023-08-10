@@ -51,7 +51,7 @@ public partial class PracticePageViewModel : BaseViewModel, IDisposable
     }
 
     [RelayCommand]
-    public async Task OnPageClosedCleanup()
+    public void OnPageClosedCleanup()
     {
         // clean up here
         CurrentQuestion = null;
@@ -87,7 +87,7 @@ public partial class PracticePageViewModel : BaseViewModel, IDisposable
     }
 
     [RelayCommand]
-    private async Task NextQuestion()
+    private void NextQuestion()
     {
         SelectionMode = SelectionMode.Single;
         var currentIndex = CurrentQuestion is not null ? CurrentQuestion.QuestionNumber : 0;

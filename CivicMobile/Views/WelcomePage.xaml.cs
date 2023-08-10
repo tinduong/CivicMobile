@@ -16,9 +16,8 @@ public partial class WelcomePage : ContentPage
         _settingService = settingService;
     }
 
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
-        //var userPref = await _settingService.GetOrCreateUserPreference();
         base.OnAppearing();
     }
 }
