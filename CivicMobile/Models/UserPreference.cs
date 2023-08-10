@@ -11,13 +11,13 @@ namespace CivicMobile.Models
     {
     }
 
-    public class UserPreference
-    {
-        public string Language { get; set; }
-        public int Age { get; set; }
-        public string State { get; set; }
-        public DateTime? RegisteredExamDate { get; set; }
-    }
+    //public class UserPreference
+    //{
+    //    public string Language { get; set; }
+    //    public int Age { get; set; }
+    //    public string State { get; set; }
+    //    public DateTime? RegisteredExamDate { get; set; }
+    //}
 
     public class UserRecord : IContextModel
     {
@@ -29,5 +29,12 @@ namespace CivicMobile.Models
         public int WrongCount { get; set; } = 0;
         public bool isFavorite { get; set; } = false;
         public bool isMarkedForReview { get; set; } = false;
+    }
+
+    public class UserPreference
+    {
+        public bool AgeMode { get; set; }
+        public bool DarkMode { get; set; }
+        public string Language { get; set; }
     }
 }

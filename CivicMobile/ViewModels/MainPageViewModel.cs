@@ -60,7 +60,19 @@ public partial class MainPageViewModel : BaseViewModel
 
             foreach (var question in questions)
             {
-                Questions.Add(question);
+                // check if AgeMode is enabled
+                if (Preferences.Get("ageMode", false))
+                {
+                    // only add question with *
+                    if (question.QuestionDescription.Contains("*"))
+                    {
+                        Questions.Add(question);
+                    }
+                }
+                else
+                {
+                    Questions.Add(question);
+                }
             }
         }
         catch (Exception e)

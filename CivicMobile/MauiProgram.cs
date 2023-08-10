@@ -23,6 +23,7 @@ public static class MauiProgram
             });
 
         // register services
+        builder.Services.AddSingleton<ISettingService, SettingService>();
         builder.Services.AddTransient<QuestionService>();
         builder.Services.AddTransient<TextToSpeechService>();
         builder.Services.AddSingleton(AudioManager.Current);

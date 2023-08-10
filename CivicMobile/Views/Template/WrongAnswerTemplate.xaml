@@ -15,7 +15,7 @@
         VerticalOptions="FillAndExpand"
         BackgroundColor="DarkRed">
         <Border.StrokeShape>
-            <RoundRectangle CornerRadius="5" />
+            <RoundRectangle CornerRadius="100"/>
         </Border.StrokeShape>
         <Border.Shadow>
             <Shadow Brush="Gray"

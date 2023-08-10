@@ -22,22 +22,12 @@ public class QuestionService
     {
         var selectedLanguage = Preferences.Get(AppConstant.Settings_SelectedLanguage, Languages.ENG);
         var result = new List<Question>();
-        string url;
-        switch (selectedLanguage)
+        string url = selectedLanguage switch
         {
-            case Languages.ENG:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}";
-                break;
-
-            case Languages.VN:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_VN}";
-                break;
-
-            default:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}";
-                break;
-        }
-
+            Languages.ENG => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}",
+            Languages.VN => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_VN}",
+            _ => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}",
+        };
         try
         {
             var response = await _httpClient.GetAsync(url);

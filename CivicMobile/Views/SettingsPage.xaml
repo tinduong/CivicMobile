@@ -3,18 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CivicMobile.Views.SettingsPage"
              BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Title="Settings">
-    <!--<VerticalStackLayout Padding="10">
-    <StackLayout Margin="15" Orientation="Vertical">
-    <Label Text="Studying Language" FontAttributes="Bold" />
-    <Picker
-    Title="Select Language"
-    HorizontalOptions="StartAndExpand"
-    ItemsSource="{Binding AvailableLanguages}"
-    SelectedItem="{Binding SelectedLanguage}"
-    VerticalOptions="Start" />
-    </StackLayout>
-    </VerticalStackLayout>-->
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Appearing" Command="{Binding OnPageLoadCommand}" />
+        <!--<toolkit:EventToCommandBehavior EventName="Disappearing" Command="{Binding OnPageClosedCleanupCommand}" />-->
+    </ContentPage.Behaviors>
+
     <Grid RowDefinitions="auto,auto,auto,auto,auto, auto"
           ColumnDefinitions="8*, 8*"
           Padding="10"
