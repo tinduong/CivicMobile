@@ -13,15 +13,13 @@ public partial class PracticePage : ContentPage
         BindingContext = practicePageViewModel;
     }
 
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
         base.OnAppearing();
-        //await ViewModel.LoadExamQuestions();
     }
 
     protected override void OnDisappearing()
     {
         base.OnDisappearing();
-        // make sure you can really want to go else keep you here
     }
 }

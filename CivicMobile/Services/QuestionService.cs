@@ -9,8 +9,8 @@ namespace CivicMobile.Services;
 
 public class QuestionService
 {
-    private HttpClient _httpClient;
-    private CivicDbContext _dbContext;
+    private readonly HttpClient _httpClient;
+    private readonly CivicDbContext _dbContext;
 
     public QuestionService(CivicDbContext dbContext)
     {
@@ -22,29 +22,19 @@ public class QuestionService
     {
         var selectedLanguage = Preferences.Get(AppConstant.Settings_SelectedLanguage, Languages.ENG);
         var result = new List<Question>();
-        string url;
-        switch (selectedLanguage)
+        string url = selectedLanguage switch
         {
-            case Languages.ENG:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}";
-                break;
-
-            case Languages.VN:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_VN}";
-                break;
-
-            default:
-                url = $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}";
-                break;
-        }
-
+            Languages.ENG => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}",
+            Languages.VN => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_VN}",
+            _ => $"{AppConstant.BaseResourceUrl}{AppConstant.File_Questions_ENG}",
+        };
         try
         {
             var response = await _httpClient.GetAsync(url);
             result = response.IsSuccessStatusCode ? await response.Content.ReadFromJsonAsync<List<Question>>()
                                               : await TryGetQuestionsFromInternalAssest(AppConstant.File_Questions_ENG);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             await ShowOfflineMessage();
             result = await TryGetQuestionsFromInternalAssest(AppConstant.File_Questions_ENG);
@@ -78,14 +68,14 @@ public class QuestionService
     public async Task<List<Question>> GetExamQuestions()
     {
         var url = "https://raw.githubusercontent.com/tinduong/citizenship/master/PracticeTest_ENG.json";
-        var result = new List<Question>();
+        List<Question> result;
         try
         {
             var response = await _httpClient.GetAsync(url);
             result = response.IsSuccessStatusCode ? await response.Content.ReadFromJsonAsync<List<Question>>()
                                               : await TryGetQuestionsFromInternalAssest(AppConstant.File_Practice_ENG);
         }
-        catch (Exception e)
+        catch (Exception)
         {
             await ShowOfflineMessage();
             result = await TryGetQuestionsFromInternalAssest(AppConstant.File_Practice_ENG);

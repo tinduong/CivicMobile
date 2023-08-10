@@ -13,9 +13,8 @@ public partial class MainPage : ContentPage
         BindingContext = homePageViewModel;
     }
 
-    protected override async void OnAppearing()
+    protected override void OnAppearing()
     {
         base.OnAppearing();
-        //await _ViewModel.LoadQuestions();
     }
 }

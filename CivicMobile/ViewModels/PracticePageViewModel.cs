@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace CivicMobile.ViewModels;
 
-public partial class PracticePageViewModel : BaseViewModel
+public partial class PracticePageViewModel : BaseViewModel, IDisposable
 {
     public ObservableCollection<Question> ExamQuestions { get; set; } = new();
 
@@ -22,7 +22,8 @@ public partial class PracticePageViewModel : BaseViewModel
     [ObservableProperty]
     private Answer _selectedAnswer;
 
-    private QuestionService questionService;
+    private CancellationTokenSource _cts;
+    private readonly QuestionService questionService;
     private readonly IAudioManager audioManager;
     private readonly TextToSpeechService speakService;
     private readonly CivicDbContext dbContext;
@@ -36,6 +37,7 @@ public partial class PracticePageViewModel : BaseViewModel
     public PracticePageViewModel(QuestionService questionService, IAudioManager audioManager, TextToSpeechService speakService, CivicDbContext dbContext)
     {
         Title = "Practice Exam";
+        _cts = new CancellationTokenSource();
         this.questionService = questionService;
         this.audioManager = audioManager;
         this.speakService = speakService;
@@ -49,7 +51,7 @@ public partial class PracticePageViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    public async Task OnPageClosedCleanupCommand()
+    public void OnPageClosedCleanup()
     {
         // clean up here
         CurrentQuestion = null;
@@ -85,16 +87,30 @@ public partial class PracticePageViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async void NextQuestion()
+    private void NextQuestion()
     {
         SelectionMode = SelectionMode.Single;
-        var currentIndex = CurrentQuestion.QuestionNumber;
+        var currentIndex = CurrentQuestion is not null ? CurrentQuestion.QuestionNumber : 0;
         var next = ++currentIndex;
         var nextQuestion = ExamQuestions.FirstOrDefault(item => item.QuestionNumber == next);
 
         CurrentQuestion = nextQuestion;
         IsQuestionAnswered = false;
         CanGoNextQuestion = false;
+
+        // read the question
+        _cts.Cancel();
+        _cts = null;
+        _cts = new CancellationTokenSource();
+    }
+
+    [RelayCommand]
+    public async void ReadQuestion()
+    {
+        await Task.Run(async () =>
+        {
+            await speakService.Speak(CurrentQuestion.QuestionDescription, "en-US", _cts);
+        });
     }
 
     private async Task<UserRecord> GetUserRecord()
@@ -156,5 +172,14 @@ public partial class PracticePageViewModel : BaseViewModel
         SelectionMode = SelectionMode.None;
         CurrentQuestion = cachCurrentQuestion;
         CanGoNextQuestion = true;
+    }
+
+    public void Dispose()
+    {
+        if (_cts != null)
+        {
+            _cts.Dispose();
+            _cts = null;
+        }
     }
 }

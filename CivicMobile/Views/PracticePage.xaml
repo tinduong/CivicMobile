@@ -9,10 +9,11 @@
              xmlns:viewmodel="clr-namespace:CivicMobile.ViewModels"
              Title="{Binding Title}"
              BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}"
+             xmlns:etc="clr-namespace:CivicMobile.Behaviors"
              x:Class="CivicMobile.Views.PracticePage">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Next" x:Name="NextQuestion"   Command="{Binding NextQuestionCommand}" />
+        <ToolbarItem Text="Next" x:Name="NextQuestion"  IsEnabled="{Binding CanGoNextQuestion}"   Command="{Binding NextQuestionCommand}" />
     </ContentPage.ToolbarItems>
 
     <ContentPage.Behaviors>
@@ -39,7 +40,15 @@
         </ResourceDictionary>
     </Page.Resources>
     <Grid RowDefinitions="*,*,4*,*">
-        <Grid ColumnDefinitions="*,9*" HeightRequest="150" Margin="10" VerticalOptions="Start" HorizontalOptions="Center">
+        <Grid ColumnDefinitions="2*,8*" HeightRequest="150" Margin="10" VerticalOptions="Start" HorizontalOptions="Center">
+            <ImageButton Source="audio.png"
+                         Margin="0"
+                         Padding="0"
+                         Command="{Binding ReadQuestionCommand}"
+                         HeightRequest="45" WidthRequest="45"
+                         HorizontalOptions="End"
+                         VerticalOptions="Center" />
+
             <Label WidthRequest="300"
                    Margin="10" VerticalOptions="CenterAndExpand" Grid.Column="1" FontAttributes="Bold" FontSize="20" Text="{Binding CurrentQuestion.QuestionDescription}" />
         </Grid>
@@ -63,14 +72,15 @@
             </CollectionView>
         </Grid>
 
-        <!--<Button Grid.Row="3"
-        HeightRequest="75"
-        WidthRequest="200"
-        VerticalOptions="Center"
-        x:Name="NextQuestion"
-        BackgroundColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource White}}"
-        Command="{Binding NextQuestionCommand}"
-        IsEnabled="{Binding CanGoNextQuestion}"
-        Text="NEXT QUESTION" />-->
+        <Button Grid.Row="3"
+CornerRadius="400"
+                HeightRequest="75"
+                WidthRequest="350"
+                VerticalOptions="Center"
+                BackgroundColor="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Primary}}"
+                Command="{Binding NextQuestionCommand}"
+                TextColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Primary}}"
+                IsEnabled="{Binding CanGoNextQuestion}"
+                Text="NEXT QUESTION" />
     </Grid>
 </ContentPage>

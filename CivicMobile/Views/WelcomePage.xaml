@@ -23,15 +23,14 @@
                     Margin="10"
                     Padding="10"
                     WidthRequest="350"
-                    Stroke="{AppThemeBinding Dark={StaticResource White}, Light={StaticResource Black}}"
+                    Stroke="{AppThemeBinding Dark={StaticResource Gray500}, Light={StaticResource Gray100}}"
                     StrokeThickness="0.5"
                     HorizontalOptions="Center"
                     VerticalOptions="FillAndExpand"
-                    BackgroundColor="{AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}">
+                    BackgroundColor="{AppThemeBinding Dark={StaticResource Gray500}, Light={StaticResource White}}">
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="5" />
                     </Border.StrokeShape>
-          
 
                     <Label
                         FontSize="14"
