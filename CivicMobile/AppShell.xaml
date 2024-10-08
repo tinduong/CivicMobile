@@ -6,25 +6,25 @@
     xmlns:local="clr-namespace:CivicMobile.Views">
 
     <TabBar>
-        <Tab Title="Welcome" Icon="home.png">
+        <Tab Title="Welcome">
             <ShellContent
                 Title=""
                 ContentTemplate="{DataTemplate local:WelcomePage}"
                 Route="WelcomePage" />
         </Tab>
-        <Tab Title="Study" Icon="study.png">
+        <Tab Title="Study" >
             <ShellContent
                 Title="Study"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>
-        <Tab Title="Practice" Icon="exam.png">
+        <Tab Title="Practice" >
             <ShellContent
                 Title="Practice"
                 ContentTemplate="{DataTemplate local:PracticePage}"
                 Route="Practice" />
         </Tab>
-        <Tab Title="Settings" Icon="settings.png">
+        <Tab Title="Settings" >
             <ShellContent
                 Title="Settings"
                 ContentTemplate="{DataTemplate local:SettingsPage}"

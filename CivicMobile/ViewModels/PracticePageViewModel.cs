@@ -3,7 +3,7 @@ using CivicMobile.Models;
 using CivicMobile.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Plugin.Maui.Audio;
+// using Plugin.Maui.Audio;
 using System.Collections.ObjectModel;
 using System.Reflection;
 
@@ -24,7 +24,7 @@ public partial class PracticePageViewModel : BaseViewModel, IDisposable
 
     private CancellationTokenSource _cts;
     private readonly QuestionService questionService;
-    private readonly IAudioManager audioManager;
+    // private readonly IAudioManager audioManager;
     private readonly TextToSpeechService speakService;
     private readonly CivicDbContext dbContext;
 
@@ -34,12 +34,12 @@ public partial class PracticePageViewModel : BaseViewModel, IDisposable
     [ObservableProperty]
     private SelectionMode _selectionMode = SelectionMode.Single;
 
-    public PracticePageViewModel(QuestionService questionService, IAudioManager audioManager, TextToSpeechService speakService, CivicDbContext dbContext)
+    public PracticePageViewModel(QuestionService questionService, TextToSpeechService speakService, CivicDbContext dbContext)
     {
         Title = "Practice Exam";
         _cts = new CancellationTokenSource();
         this.questionService = questionService;
-        this.audioManager = audioManager;
+        // this.audioManager = audioManager;
         this.speakService = speakService;
         this.dbContext = dbContext;
     }
@@ -149,8 +149,8 @@ public partial class PracticePageViewModel : BaseViewModel, IDisposable
             var assembly = typeof(App).GetTypeInfo().Assembly;
             var stream = assembly.GetManifestResourceStream("CivicMobile.Audio." + "correct.wav");
 
-            var player = audioManager.CreatePlayer(stream);
-            player.Play();
+            // var player = audioManager.CreatePlayer(stream);
+            // player.Play();
         }
         else
         {

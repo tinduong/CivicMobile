@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
-                <Image Source="appwelcome_bg.png" Scale="1.4" TranslationY="-15" TranslationX="-10" Margin="0" />
+                <!-- <Image Source="appwelcome_bg.png" Scale="1.4" TranslationY="-15" TranslationX="-10" Margin="0" /> -->
             </Grid>
             <Grid Grid.Row="1" RowSpacing="15">
                 <Border
