@@ -2,9 +2,9 @@ name: Build Civic Windows
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master_todo" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "master_todo" ]
 
 jobs:
   build:
